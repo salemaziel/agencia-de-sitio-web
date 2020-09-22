@@ -5,6 +5,7 @@ module.exports = {
     title: `Minimalistic Bootstrap Gatsby Starter`,
     description: `A simple Gatsby starter with react-bootstrap`,
     author: `@salemaziel`,
+    siteUrl: `https://agencia-web.rblart.design`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,21 +17,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-     {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://salemaziel.com',
-        sitemap: 'https://salemaziel.com/sitemap.xml',
-      }
-    },
+//     {
+//      resolve: 'gatsby-plugin-robots-txt',
+//      options: {
+//        host: 'https://salemaziel.com',
+//        sitemap: 'https://salemaziel.com/sitemap.xml',
+//      }
+//    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-basic-bootstrap`,
-        short_name: `starter`,
+        name: `Agencia de Web`,
+        short_name: `AgenciaWeb`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
