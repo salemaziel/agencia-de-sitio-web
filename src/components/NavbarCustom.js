@@ -11,6 +11,10 @@ import SideNav from "react-simple-sidenav";
 
 import navStyles from './navbar.module.css'
 
+import {
+  FaHome
+} from 'react-icons/fa'
+
 
 
 //then
@@ -58,7 +62,7 @@ const NavbarCustom = (props) => {
           >
             <Nav.Item to="/about" className={navStyles.navItem}>
               <Nav.Link as={Link} to="/about" active={false}>
-                About
+              Quien Somos
               </Nav.Link>
             </Nav.Item>
 
@@ -133,10 +137,10 @@ const NavbarCustom = (props) => {
           }}
           items={[
             <Link rel="preload" className="" to="/">
-              Home
+              <FaHome />
             </Link>,
-            <Link rel="preload" className="" to="/about">
-              About
+            <Link rel="preload" className="" to="/about">            
+              Quien Somos
             </Link>,
             <Link rel="preload" className="" to="/faq">
               FAQ
@@ -148,7 +152,7 @@ const NavbarCustom = (props) => {
           itemStyle={{
             background: "transparent!important",
             backgroundColor: "transparent!important",
-            color: "#000",
+            color: "#fff!important",
             fontSize: "1.2rem",
             padding: "10px 0",
             textAlign: "center",
@@ -156,7 +160,7 @@ const NavbarCustom = (props) => {
           }}
           navStyle={{
             width: "70%",
-            background: "rgba(255,255,255,0.9)",
+            background: "rgba(0,0,0,0.7)",
             color: "inherit",
             maxHeight: "100vh",
           }}

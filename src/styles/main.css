@@ -22,9 +22,17 @@
   #navbar-nav {
     display: flex;
   }
+
+  nav div ul {
+    list-style: none;
+  }
+
+  nav div ul li {
+    list-style: none;
+  }
 @media screen and (max-width:991px) {
   #navbar-nav{
-    display: none;
+    display: none!important;
   }
 }
 
