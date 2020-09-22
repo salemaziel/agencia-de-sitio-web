@@ -7,8 +7,16 @@ import Image from "react-bootstrap/Image";
 import Features4 from "./Features4";
 import "./FeaturesSectionPic3List.scss";
 
-function FeaturesSectionPic3List(props) {
-  return (
+import {
+  MdChat,
+  MdGamepad,
+  MdMonetizationOn
+} from 'react-icons/md'
+
+
+//function FeaturesSectionPic3List(props) {
+  const FeaturesSectionPic3List = (props) => {
+return (
     <Section
       bg={props.bg}
       textColor={props.textColor}
@@ -30,21 +38,21 @@ function FeaturesSectionPic3List(props) {
                   title: "Chat",
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                  iconClass: "fas fa-comments",
+                  listIcon: "",
                   iconColor: "primary",
                 },
                 {
                   title: "Play",
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                  iconClass: "fas fa-gamepad",
+                  listIcon: "",
                   iconColor: "danger",
                 },
                 {
                   title: "Hustle",
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                  iconClass: "fas fa-cat",
+                  listIcon:"",
                   iconColor: "dark",
                 },
               ]}

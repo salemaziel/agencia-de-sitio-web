@@ -42,9 +42,7 @@ function Section(props) {
           (props.size === "lg" ? " my-md-5" : "")
         }
       >
-              <Fade top cascade>
         {props.children}
-        </Fade>
       </div>
     </section>
   );

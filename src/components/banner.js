@@ -6,8 +6,14 @@ import Col from 'react-bootstrap/Col'
 
 import bannerStyle from './banner.module.css'
 
-const Banner = () => (
-    <section className={bannerStyle.BannerSection}>
+const Banner = (props) => {
+
+return (
+    <section className={bannerStyle.BannerSection}
+    style={{
+        "--image": `url(${props.bgImage})`
+    }}
+    >
             <Row />
                 <Col>
                     
@@ -15,5 +21,6 @@ const Banner = () => (
 
     </section>
 )
+}
 
 export default Banner

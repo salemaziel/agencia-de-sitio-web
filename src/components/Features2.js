@@ -4,9 +4,12 @@ import Col from "react-bootstrap/Col";
 import SectionHeader from "./SectionHeader";
 import Image from "react-bootstrap/Image";
 import "./Features2.scss";
+import Fade from 'react-reveal/Fade'
 
 function Features2(props) {
   return (
+    <Fade top cascade>
+
     <div className="Features2">
       {props.items.map((item, index) => (
         <Row className="align-items-center" key={index}>
@@ -27,6 +30,8 @@ function Features2(props) {
         </Row>
       ))}
     </div>
+    </Fade>
+
   );
 }
 
