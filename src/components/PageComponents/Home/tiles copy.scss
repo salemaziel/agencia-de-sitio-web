@@ -13,18 +13,6 @@
     flex-wrap: wrap;
     position: relative;
     margin: -2.5em 0 0 -2.5em;
-    @media screen and (max-width: 1280px) {
-        margin: -1.25em 0 0 -1.25em;
-    }
-    @media screen and (max-width: 980px) {
-        margin: -2.5em 0 0 -2.5em;
-    }
-    @media screen and (max-width: 736px) {
-        margin: -1.25em 0 0 -1.25em;
-    }
-    @media screen and (max-width: 480px) {
-        margin: 0;
-    }
 /*}*/
 
     article {
@@ -35,31 +23,8 @@
         position: relative;
         width: calc(33.33333% - 2.5em);
         margin: 2.5em 0 0 2.5em;
-        @media screen and (max-width: 1280px) {
-            width: calc(33.33333% - 1.25em);
-            margin: 1.25em 0 0 1.25em;
-        }
-        @media screen and (max-width: 980px) {
-            width: calc(50% - 2.5em);
-            margin: 2.5em 0 0 2.5em;
-        }
-        @media screen and (max-width: 736px) {
-            width: calc(50% - 1.25em);
-            margin: 1.25em 0 0 1.25em;
-        }
-        @media screen and (max-width: 480px) {
-        width: 100%;
-        margin: 1.25em 0 0 0;
-        }
     }
-        article:hover > .image {
-            @media screen and (max-width: 736px) {
-                -moz-transform: scale(1.0);
-                -webkit-transform: scale(1.0);
-                -ms-transform: scale(1.0);
-                transform: scale(1.0);
-            }
-        }
+
 
         .image {
             -moz-transition: -moz-transform 0.5s ease;
@@ -72,10 +37,6 @@
             border-radius: 4px;
             overflow: hidden;
         }
-
-        
-
-
 
            .image img {
                 display: block;

@@ -3,25 +3,26 @@ import React from "react";
 import sectiontileStyles from "./home.module.css";
 
 import Tiles from './tiles'
+import Fade from 'react-reveal/Fade'
+
 
 const SectionTiles = (props) => {
   return (
     <>
       <section className={sectiontileStyles.sectionTiles}>
         <div className="inner">
+          <Fade top cascade>
           <header>
             <h1>
-              Erat ut Sapien, mus curae, morbi dictum duis
-              <br />
-              aenean auctor at Dictum.
+            {props.title1}
+                    <br />
+                    {props.title2}              
             </h1>
             <p>
-              Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod
-              sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus
-              quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.
-              Lorem ipsum dolor sit amet nullam dolore.
+              {props.subdescription}
             </p>
           </header>
+          </Fade>
           <Tiles
             items={[
               {
@@ -29,7 +30,7 @@ const SectionTiles = (props) => {
                   "https://res.cloudinary.com/dexdumfqy/image/upload/v1600734136/rbl-art-designs/pic01_ofmcp4.jpg",
                 imgAlt: "image",
                 link: "/",
-                title: "Magna",
+                title: "Crear Una Página Web",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                 style: "1",
@@ -39,7 +40,7 @@ const SectionTiles = (props) => {
                   "https://res.cloudinary.com/dexdumfqy/image/upload/v1600734136/rbl-art-designs/pic01_ofmcp4.jpg",
                 imgAlt: "image",
                 link: "/",
-                title: "Magna",
+                title: "Crear Una App",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                 style: "2",
@@ -49,7 +50,7 @@ const SectionTiles = (props) => {
                   "https://res.cloudinary.com/dexdumfqy/image/upload/v1600734136/rbl-art-designs/pic01_ofmcp4.jpg",
                 imgAlt: "image",
                 link: "/",
-                title: "Magna",
+                title: "Otra Tecnologia",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                 style: "3",
@@ -57,7 +58,7 @@ const SectionTiles = (props) => {
             ]}
           />
 
-          <section className={sectiontileStyles.tiles}>
+          {/*<section className={sectiontileStyles.tiles}>
             <article className={sectiontileStyles.style1}>
               <span className={sectiontileStyles.image}>
                 <img
@@ -261,8 +262,8 @@ const SectionTiles = (props) => {
                   </p>
                 </div>
               </a>
-  </article>*/}
-          </section>
+  </article>* /}
+          </section>*/}
         </div>
       </section>
     </>

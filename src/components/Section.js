@@ -2,6 +2,9 @@ import React from "react";
 import BackgroundImage from "./BackgroundImage";
 import "./Section.scss";
 
+import Fade from 'react-reveal/Fade'
+
+
 function Section(props) {
   const {
     bg,
@@ -39,7 +42,9 @@ function Section(props) {
           (props.size === "lg" ? " my-md-5" : "")
         }
       >
+              <Fade top cascade>
         {props.children}
+        </Fade>
       </div>
     </section>
   );

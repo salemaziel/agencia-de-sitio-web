@@ -4,10 +4,13 @@ import tileStyles from "./home.module.css";
 
 import './tiles.scss'
 import { Link } from "gatsby";
+import Fade from 'react-reveal/Fade'
+
 
 const Tiles = (props) => {
   return (
     <>
+              <Fade top cascade>
       <section /*className={tileStyles.tiles}*/ className="tiles">
         {props.items.map((item, index) => (
           <article
@@ -34,6 +37,7 @@ const Tiles = (props) => {
           </article>
         ))}
       </section>
+      </Fade>
     </>
   );
 };

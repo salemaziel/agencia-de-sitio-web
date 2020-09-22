@@ -69,8 +69,8 @@ const NavbarCustom = (props) => {
             </Nav.Item>
 
             <Nav.Item to="/contact" className={navStyles.navItem}>
-              <Nav.Link as={Link} to="/contact" active={false}>
-                Contact
+              <Nav.Link as={Link} to="/contacto" active={false}>
+                Contacto
               </Nav.Link>
             </Nav.Item>
 
@@ -100,52 +100,10 @@ const NavbarCustom = (props) => {
 
           </Nav>
           <Nav className="mr-1">
-            {/*{auth.user && (
-          <Nav.Dropdown id="dropdown" title="Account" alignRight={true}>
-            <Nav.Item to="/dashboard">
-              <Nav.Dropdown.Item active={false}>Dashboard</Nav.Dropdown.Item>
-            </Nav.Item>
 
-            <Nav.Item to="/settings/general">
-              <Nav.Dropdown.Item active={false}>Settings</Nav.Dropdown.Item>
-            </Nav.Item>
-
-
-            <Nav.Item to="/auth/signout">
-              <Nav.Dropdown.Item
-                active={false}
-                onClick={(e) => {
-                  e.preventDefault();
-                  auth.signout();
-                }}
-              >
-                Sign out
-              </Nav.Dropdown.Item>
-            </Nav.Item>
-          </Nav.Dropdown>
-        )}
-
-        {!auth.user && (
-          <Nav.Item to={SIGN_IN}>
-            <Nav.Link active={false}>Login</Nav.Link>
-          </Nav.Item>
-        )}
-	*/}
           </Nav>
 
-          {/*
-	{!auth.user && (*/}
-        {/*<Button
-          className={navStyles.CTAButton}
-          variant=""
-          onClick={() => {
-            navigateTo("/contact");
-          }}
-        >
-          Contact
-        </Button>
-       {/* )}
-	*/}
+
         </Navbar>
         <SideNav
           openFromRight={true}
@@ -183,8 +141,8 @@ const NavbarCustom = (props) => {
             <Link rel="preload" className="" to="/faq">
               FAQ
             </Link>,
-            <Link rel="preload" className="" to="/contact">
-              Contact
+            <Link rel="preload" className="" to="/contacto">
+              Contacto
             </Link>,
           ]}
           itemStyle={{
