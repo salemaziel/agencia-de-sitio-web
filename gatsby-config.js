@@ -2,8 +2,8 @@ const config = require('./config/site');
 
 module.exports = {
   siteMetadata: {
-    title: `Minimalistic Bootstrap Gatsby Starter`,
-    description: `A simple Gatsby starter with react-bootstrap`,
+    title: `Agencia de Web`,
+    description: `Agencia de Web`,
     author: `@salemaziel`,
     siteUrl: `https://agencia-web.rblart.design`,
   },
@@ -33,8 +33,8 @@ module.exports = {
         name: `Agencia de Web`,
         short_name: `AgenciaWeb`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#00acc1`,
+        theme_color: `#543ab7`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
