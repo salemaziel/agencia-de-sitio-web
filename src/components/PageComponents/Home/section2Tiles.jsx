@@ -31,7 +31,7 @@ const SectionTiles = (props) => {
                 imgSrc:
                   "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837299/rbl-art-designs/create-a-website_npy4v8.png",
                 imgAlt: "image",
-                link: "/",
+                link: "/#",
                 title: "Crear Una Página Web",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
@@ -41,7 +41,7 @@ const SectionTiles = (props) => {
                 imgSrc:
                   "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836930/rbl-art-designs/app-store-1174440_1920-square_kywhnk.jpg",
                 imgAlt: "image",
-                link: "/",
+                link: "/#",
                 title: "Crear Una App",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
@@ -51,7 +51,7 @@ const SectionTiles = (props) => {
                 imgSrc:
                   "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
                 imgAlt: "image",
-                link: "/",
+                link: "/#",
                 title: "Otras Soluciones Tecnológicas",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
@@ -59,9 +59,9 @@ const SectionTiles = (props) => {
               },
               {
                 imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600849775/rbl-art-designs/consultation-1281-square_rh27uu.jpg",
                 imgAlt: "image",
-                link: "/",
+                link: "/#",
                 title: "Servicios De Asesoramiento",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
