@@ -1,22 +1,30 @@
-import React from 'react'
+import React from "react";
 
-import SectionOne from './sectionOne'
-import SectionTwo from './sectionTwo'
-import SectionThree from './sectionThree'
+import SectionOne from "./Section1Intro";
+import SectionTwo from "./sectionTwo";
+import SectionThree from "./sectionThree";
 
-import Banner from '../../banner'
-
-import CardsWBgSection from '../../CardsWBgSection'
-
+import Banner from "../../banner";
+import FaqSimpleSection from "../../FaqSimpleSection";
+import SectionIntro from './Section1Intro'
+import CardsWBgSection from "../../CardsWBgSection";
 
 const AboutPage = (props) => {
-    return(
-<>
-        <Banner
-        bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg" />
-        
-              <CardsWBgSection
-        bg="white"
+  return (
+    <>
+      <Banner bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg" />
+      <SectionIntro
+        bg=""
+        textColor="dark"
+        size="sm"
+        bgImage=""
+        bgImageOpacity={0.8}
+        title="We Are Who We Are"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo."
+      />
+      <div style={{backgroundImage: 'url(https://res.cloudinary.com/dexdumfqy/image/upload/v1600848134/rbl-art-designs/circle-dots-background_npogwh.svg)'}} >
+      <CardsWBgSection
+        bg=""
         textColor="dark"
         size="md"
         bgImage=""
@@ -24,9 +32,19 @@ const AboutPage = (props) => {
         title="Meet the Team"
         subtitle=""
       />
+      </div>
 
-</>
-)
-    }
+      <FaqSimpleSection
+        bg=""
+        textColor="dark"
+        size="md"
+        bgImage=""
+        bgImageOpacity={1}
+        title="Preguntas Frecuentes"
+        subtitle=""
+      />
+    </>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

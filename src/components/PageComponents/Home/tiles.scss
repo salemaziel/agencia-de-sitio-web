@@ -12,7 +12,7 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
-    margin: -2.5em 0 0 -2.5em;
+    margin: -2.5em 0 0 0em;
     @media screen and (max-width: 1280px) {
         margin: -1.25em 0 0 -1.25em;
     }
@@ -33,19 +33,21 @@
         -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
         transition: transform 0.5s ease, opacity 0.5s ease;
         position: relative;
-        width: calc(33.33333% - 2.5em);
-        margin: 2.5em 0 0 2.5em;
+        /*width: calc(33.33333% - 2.5em);
+        margin: 2.5em 0 0 2.5em;*/
+        width: 100%;
+        margin: 2rem auto 0 auto;
         @media screen and (max-width: 1280px) {
-            width: calc(33.33333% - 1.25em);
-            margin: 1.25em 0 0 1.25em;
+            /*width: calc(33.33333% - 1.25em);
+            margin: 1.25em 0 0 1.25em;*/
         }
         @media screen and (max-width: 980px) {
-            width: calc(50% - 2.5em);
-            margin: 2.5em 0 0 2.5em;
+            /*width: calc(50% - 2.5em);*/
+            margin: 1em;
         }
         @media screen and (max-width: 736px) {
-            width: calc(50% - 1.25em);
-            margin: 1.25em 0 0 1.25em;
+           /* width: calc(50% - 1.25em);
+            margin: 1.25em 0 0 1.25em;*/
         }
         @media screen and (max-width: 480px) {
         width: 100%;

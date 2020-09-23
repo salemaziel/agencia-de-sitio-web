@@ -33,6 +33,10 @@ function CtaSectionBgImage(props) {
               variant={props.buttonColor}
               size="lg"
               onClick={props.buttonOnClick}
+              style={{
+                background: 'rgba(37, 121, 188)',
+                backgroundColor: 'rgba(37, 121, 188)'
+              }}
             >
               {props.buttonText}
             </Button>

@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 
 import Fade from "react-reveal/Fade";
 import { navigateTo } from "gatsby";
-import Waves from "../../waves";
+import SectionWaves from "../../SectionWaves";
 
 const Homepage = (props) => {
   return (
@@ -19,15 +19,15 @@ const Homepage = (props) => {
       <Helmet>
         <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
       </Helmet>
-      <Waves headline="Bienvenidos" subtitle="¿Cómo podemos ayudar te hoy?" />
+      <SectionWaves headline="Bienvenidos" subtitle="¿Cómo podemos ayudar te hoy?" />
       {/*<SectionHero
         bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg"
         headline="Bienvenidos"
         subtitle="¿Cómo podemos ayudar te hoy?"
       />*/}
       <SectionTiles
-        title1="Erat ut Sapien, mus curae, morbi dictum duis"
-        title2="aenean auctor at Dictum."
+        title1="El Futuro Es Ahora."
+        title2="¿Están Listos Usted y Su Empresa?"
         subdescription="Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod
       sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus
       quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.
@@ -55,7 +55,7 @@ const Homepage = (props) => {
         bg="dark"
         textColor="white"
         size="sm"
-        bgImage="https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_960_720.jpg"
+        bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600837824/rbl-art-designs/smartphone-1894723_1920_yti9if.jpg"
         bgImageOpacity={0.8}
         title="Check out our products"
         subtitle=""

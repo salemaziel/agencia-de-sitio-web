@@ -72,43 +72,45 @@ const NavbarCustom = (props) => {
                 </Nav.Link>
               </Nav.Item>
 
-              <Nav.Item to="/faq" className={navStyles.navItem}>
+              {/*<Nav.Item to="/faq" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/faq" active={false}>
                   FAQ
                 </Nav.Link>
-              </Nav.Item>
+          </Nav.Item>*/}
 
-              <Nav.Item to="/contact" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/contacto" active={false}>
-                  Contacto
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item to="/contact" className={navStyles.navItem}>
+              <Nav.Item to="/servicios" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/servicios" active={false}>
                   Servicios
                 </Nav.Link>
               </Nav.Item>
 
+              <Nav.Item to="/contacto" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/contacto" active={false}>
+                  Contacto
+                </Nav.Link>
+              </Nav.Item>
+
+
               <NavDropdown
                 as={Link}
-                href="/about"
-                to="/about"
+                href="/mas"
+                to="/mas"
                 eventKey="more"
-                title="More"
+                title="Más"
                 id="nav-dropdown-about"
                 className={navStyles.navItem}
               >
-                <NavDropdown.Item eventKey="/">
+                <NavDropdown.Item eventKey="/#">
                   {" "}
                   Dropdown Item 1{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey="/">
+                <NavDropdown.Item eventKey="/#">
                   Dropdown Item 2
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey="/">
+                <NavDropdown.Item eventKey="/#">
                   Dropdown Item 3
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey="/">
+                <NavDropdown.Item eventKey="/#">
                   Dropdown Item 4
                 </NavDropdown.Item>
               </NavDropdown>
@@ -148,9 +150,6 @@ const NavbarCustom = (props) => {
               <Link rel="preload" className={navStyles.navItem} to="/about">
                 Quien Somos
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/faq">
-                FAQ
-              </Link>,
               <Link rel="preload" className={navStyles.navItem} to="/contacto">
                 Contacto
               </Link>,
@@ -162,7 +161,8 @@ const NavbarCustom = (props) => {
               background: "transparent!important",
               backgroundColor: "transparent!important",
               color: "#fff!important",
-              fontSize: "1.2rem",
+              fontSize: "1.5rem",
+              fontWeight: "500",
               padding: "10px 0",
               textAlign: "center",
               margin: "1rem auto",

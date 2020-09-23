@@ -1,0 +1,29 @@
+$theme-colors: (
+    "primary": rgba(37, 121, 188, 0.9),
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.navbar-toggler-icon {
+    height: 2.5em;
+    width: 2.5em;
+    color: white;
+    fill: white;
+}
+
+.dropdown-item {
+    color:  rgba(37, 121, 188, 1)!important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:focus-within {
+    color: white!important;
+    background: rgba(37, 121, 188, 1);
+}

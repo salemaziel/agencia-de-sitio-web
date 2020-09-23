@@ -5,14 +5,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
 
-import FAQPage from '../components/PageComponents/FAQ/FAQPage'
+import ServicesPage from '../components/PageComponents/Servicios/ServicesPage'
 
-const FAQ = () => (
+const Servicios = () => (
   <Layout>
-    <SEO title="FAQ" />
-    <FAQPage />
+    <SEO title="Services" />
+    <ServicesPage />
 
   </Layout>
 );
 
-export default FAQ
+export default Servicios;

@@ -12,7 +12,8 @@ import { Container } from "react-bootstrap";
 
 import Header from "./header";
 import Footer from './Footer/footer'
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/custom.scss";
 import './layout.css'
 import '../styles/main.css'
 

@@ -4,13 +4,15 @@ import sectiontileStyles from "./home.module.css";
 
 import Tiles from './tiles'
 import Fade from 'react-reveal/Fade'
-
+import Container from 'react-bootstrap/Container'
 
 const SectionTiles = (props) => {
   return (
     <>
       <section className={sectiontileStyles.sectionTiles}>
+      <Container fluid>
         <div className="inner">
+        
           <Fade top cascade>
           <header>
             <h1>
@@ -27,7 +29,7 @@ const SectionTiles = (props) => {
             items={[
               {
                 imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600734136/rbl-art-designs/pic01_ofmcp4.jpg",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837299/rbl-art-designs/create-a-website_npy4v8.png",
                 imgAlt: "image",
                 link: "/",
                 title: "Crear Una Página Web",
@@ -37,7 +39,7 @@ const SectionTiles = (props) => {
               },
               {
                 imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600734136/rbl-art-designs/pic01_ofmcp4.jpg",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836930/rbl-art-designs/app-store-1174440_1920-square_kywhnk.jpg",
                 imgAlt: "image",
                 link: "/",
                 title: "Crear Una App",
@@ -47,13 +49,23 @@ const SectionTiles = (props) => {
               },
               {
                 imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600734136/rbl-art-designs/pic01_ofmcp4.jpg",
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
                 imgAlt: "image",
                 link: "/",
-                title: "Otra Tecnologia",
+                title: "Otras Soluciones Tecnológicas",
                 description:
                   "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                 style: "3",
+              },
+              {
+                imgSrc:
+                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
+                imgAlt: "image",
+                link: "/",
+                title: "Servicios De Asesoramiento",
+                description:
+                  "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                style: "4",
               },
             ]}
           />
@@ -265,6 +277,7 @@ const SectionTiles = (props) => {
   </article>* /}
           </section>*/}
         </div>
+        </Container>
       </section>
     </>
   );

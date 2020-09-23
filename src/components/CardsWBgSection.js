@@ -24,28 +24,28 @@ function CardsWBgSection(props) {
         <TeamBios2
           items={[
             {
-              headerImage: "https://source.unsplash.com/pe_R74hldW4/1080x360",
-              avatarImage: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
+              headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1599804800/salemaziel.com/me/terminal-2-640x287_kncwse.jpg",
+              avatarImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600838928/rbl-art-designs/salem-crop_mjbf56.png",
               name: "Salem Aziel",
-              role: "Web & App Development",
+              role: "Web and App Development, Digital Consultant",
               bio:
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
             },
             {
-              headerImage: "https://source.unsplash.com/uwPBAlQyIag/1080x360",
-              avatarImage: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
+              headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836482/rbl-art-designs/camera-2598507_1920_bbrgjn.jpg",
+              avatarImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600838742/rbl-art-designs/dae-square_mnfqeg.jpg",
               name: "DaeHyun Yoo",
-              role: "Designer",
+              role: "Graphic Design, Photography, Videography",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
             },
             {
-              headerImage: "https://source.unsplash.com/pJ_DCj9KswI/1080x360",
+              headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836618/rbl-art-designs/digital-marketing-1433427_1920_ikotj9.jpg",
               avatarImage: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
               name: "Christian Tuna",
-              role: "Sales",
+              role: "Sales, Marketing, Communications",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
             },
           ]}
         />

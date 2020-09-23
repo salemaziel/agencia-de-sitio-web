@@ -26,7 +26,7 @@ function TeamBios2(props) {
               <div className="TeamBios2__avatar-wrapper">
                 <Avatar src={item.avatarImage} alt={item.name} size="128px" />
               </div>
-              <h6 className="font-weight-bold mb-0 mt-4">{item.name}</h6>
+              <h6 className="font-weight-bold mb-2 mt-3">{item.name}</h6>
               <small>{item.role}</small>
               <Card.Text className="mt-4">{item.bio}</Card.Text>
             </Card.Body>
