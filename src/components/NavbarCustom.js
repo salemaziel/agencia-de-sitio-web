@@ -53,9 +53,9 @@ const NavbarCustom = (props) => {
           ></Navbar.Toggle>
           <Navbar
             id="navbar-nav"
-            className="justify-content-end"
+            className="justify-content-end NoMobile"
             style={{
-              display: "flex!important",
+              display: "flex",
               flexBasis: "auto",
               flexGrow: "1",
               alignItems: "center",
