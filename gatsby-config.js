@@ -2,8 +2,8 @@ const config = require('./config/site');
 
 module.exports = {
   siteMetadata: {
-    title: `Agencia de Web`,
-    description: `Agencia de Web`,
+    title: `Agencia Web`,
+    description: `Agencia Web`,
     author: `@salemaziel`,
     siteUrl: `https://agencia-web.rblart.design`,
   },
@@ -30,11 +30,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Agencia de Web`,
+        name: `Agencia Web`,
         short_name: `AgenciaWeb`,
         start_url: `/`,
-        background_color: `#00acc1`,
-        theme_color: `#543ab7`,
+        background_color: `#2579bc`,
+        theme_color: `#2579bc`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

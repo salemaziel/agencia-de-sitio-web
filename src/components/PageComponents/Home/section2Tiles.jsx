@@ -2,75 +2,69 @@ import React from "react";
 
 import sectiontileStyles from "./home.module.css";
 
-import Tiles from './tiles'
-import Fade from 'react-reveal/Fade'
-import Container from 'react-bootstrap/Container'
+import Tiles from "./tiles";
+import Fade from "react-reveal/Fade";
+import Container from "react-bootstrap/Container";
 
 const SectionTiles = (props) => {
   return (
     <>
       <section className={sectiontileStyles.sectionTiles}>
-      <Container fluid>
-        <div className="inner">
-        
-          <Fade top cascade>
-          <header>
-            <h1>
-            {props.title1}
-                    <br />
-                    {props.title2}              
-            </h1>
-            <p>
-              {props.subdescription}
-            </p>
-          </header>
-          </Fade>
-          <Tiles
-            items={[
-              {
-                imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837299/rbl-art-designs/create-a-website_npy4v8.png",
-                imgAlt: "image",
-                link: "/#",
-                title: "Crear Una Página Web",
-                description:
-                  "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-                style: "1",
-              },
-              {
-                imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836930/rbl-art-designs/app-store-1174440_1920-square_kywhnk.jpg",
-                imgAlt: "image",
-                link: "/#",
-                title: "Crear Una App",
-                description:
-                  "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-                style: "2",
-              },
-              {
-                imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
-                imgAlt: "image",
-                link: "/#",
-                title: "Otras Soluciones Tecnológicas",
-                description:
-                  "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-                style: "3",
-              },
-              {
-                imgSrc:
-                  "https://res.cloudinary.com/dexdumfqy/image/upload/v1600849775/rbl-art-designs/consultation-1281-square_rh27uu.jpg",
-                imgAlt: "image",
-                link: "/#",
-                title: "Servicios De Asesoramiento",
-                description:
-                  "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-                style: "4",
-              },
-            ]}
-          />
+        <Container fluid>
+          <div className="inner">
+            <Fade top cascade>
+              <header>
+                <h1>{props.title1}</h1>
+                <h1> {props.title2}</h1>
+                <p>{props.subdescription}</p>
+              </header>
+            </Fade>
+            <Tiles
+              items={[
+                {
+                  imgSrc:
+                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837299/rbl-art-designs/create-a-website_npy4v8.png",
+                  imgAlt: "image",
+                  link: "/#",
+                  title: "Crear Una Página Web",
+                  description:
+                    "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                  style: "1",
+                },
+                {
+                  imgSrc:
+                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836930/rbl-art-designs/app-store-1174440_1920-square_kywhnk.jpg",
+                  imgAlt: "image",
+                  link: "/#",
+                  title: "Crear Una App",
+                  description:
+                    "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                  style: "2",
+                },
+                {
+                  imgSrc:
+                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
+                  imgAlt: "image",
+                  link: "/#",
+                  title: "Otras Soluciones Tecnológicas",
+                  description:
+                    "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                  style: "3",
+                },
+                {
+                  imgSrc:
+                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600849775/rbl-art-designs/consultation-1281-square_rh27uu.jpg",
+                  imgAlt: "image",
+                  link: "/#",
+                  title: "Servicios De Asesoramiento",
+                  description:
+                    "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                  style: "4",
+                },
+              ]}
+            />
 
-          {/*<section className={sectiontileStyles.tiles}>
+            {/*<section className={sectiontileStyles.tiles}>
             <article className={sectiontileStyles.style1}>
               <span className={sectiontileStyles.image}>
                 <img
@@ -276,7 +270,7 @@ const SectionTiles = (props) => {
               </a>
   </article>* /}
           </section>*/}
-        </div>
+          </div>
         </Container>
       </section>
     </>
