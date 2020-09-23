@@ -1,5 +1,6 @@
 .Footer {
-background-color: rgba(21, 27, 33, 0.6);
+  /*background-color: rgba(21, 27, 33, 0.6);*/
+  background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
   color: #ffffff;
   /*background-image: url('../images/field-of-flowers.jpg');*/
   background-position:  center bottom;
@@ -253,7 +254,9 @@ p.copyright {
   padding: 3em 0;
   text-align: center;
   background-color: rgba(0,0,0,0.8);
+  /*background-color: rgb(37, 121, 188);*/
 }
+
 
 .Footer .copyright {
   font-size: 0.8em;

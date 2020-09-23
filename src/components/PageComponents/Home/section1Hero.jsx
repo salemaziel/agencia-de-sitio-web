@@ -4,7 +4,12 @@ import LazyHero from "react-lazy-hero";
 import heroStyles from "./home.module.css";
 import Typist from "react-typist";
 
-import "react-typist/dist/Typist.css";
+//import "react-typist/dist/Typist.css";
+
+import ParticlesImage from '../../ParticlesImage'
+import Row from "react-bootstrap/Row";
+
+import PhoneSVG from '../../../images/iphone-160307.svg'
 
 const SectionHero = (props) => {
   //function SectionHero(props) {
@@ -18,6 +23,12 @@ const SectionHero = (props) => {
         minHeight="100vh"
         opacity={0.1}
       >
+          {/*<ParticlesImage />*/}
+          {/*<div
+       className="someClassName"
+       style={{ backgroundImage: `url(${PhoneSVG})`, backgroundOrigin: 'center center', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover', minHeight: '650px' }}
+          > */}
+          {/*<img src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600820219/rbl-art-designs/iphone-160307_fshiye.svg" alt='' />*/}
         <Typist startDelay={200}>
           <h1 style={{ color: "white", textShadow: "2px 2px 4px black" }}>
             {props.headline}
@@ -32,7 +43,8 @@ const SectionHero = (props) => {
           >
             {props.subtitle}
           </h3>
-        </Typist>
+          </Typist>
+          {/*</div>*/}
       </LazyHero>
     </section>
   );

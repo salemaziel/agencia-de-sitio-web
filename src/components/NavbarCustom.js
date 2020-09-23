@@ -29,7 +29,7 @@ const NavbarCustom = (props) => {
     <>
       <Navbar
         fixed
-        bg={scroll ? "dark" : ""}
+        bg={scroll ? "primary" : ""}
         variant="dark"
         expand="lg"
         className={navStyles.headerNavbar}
@@ -142,19 +142,19 @@ const NavbarCustom = (props) => {
               margin: "auto",
             }}
             items={[
-              <Link rel="preload" className="" to="/">
+              <Link rel="preload" className={navStyles.navItem} to="/">
                 <FaHome />
               </Link>,
-              <Link rel="preload" className="" to="/about">
+              <Link rel="preload" className={navStyles.navItem} to="/about">
                 Quien Somos
               </Link>,
-              <Link rel="preload" className="" to="/faq">
+              <Link rel="preload" className={navStyles.navItem} to="/faq">
                 FAQ
               </Link>,
-              <Link rel="preload" className="" to="/contacto">
+              <Link rel="preload" className={navStyles.navItem} to="/contacto">
                 Contacto
               </Link>,
-              <Link rel="preload" className="" to="/servicios">
+              <Link rel="preload" className={navStyles.navItem} to="/servicios">
                 Servicios
               </Link>,
             ]}
@@ -169,7 +169,7 @@ const NavbarCustom = (props) => {
             }}
             navStyle={{
               width: "70%",
-              background: "rgba(0,0,0,0.7)",
+              background: "linear-gradient(60deg, #543ab7 0%, #00acc1 100%)",
               color: "inherit",
               maxHeight: "100vh",
             }}

@@ -7,18 +7,24 @@ import FeaturesSectionZigzag from "../../FeaturesSectionZigzag";
 import FeaturesSectionPic3List from "../../FeaturesSectionPic3List.js";
 import CtaSectionBgImage from "../../CtaSectionBgImage";
 
+import { Helmet } from "react-helmet";
 
 import Fade from "react-reveal/Fade";
 import { navigateTo } from "gatsby";
+import Waves from "../../waves";
 
 const Homepage = (props) => {
   return (
     <>
-      <SectionHero
+      <Helmet>
+        <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+      </Helmet>
+      <Waves headline="Bienvenidos" subtitle="¿Cómo podemos ayudar te hoy?" />
+      {/*<SectionHero
         bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg"
         headline="Bienvenidos"
         subtitle="¿Cómo podemos ayudar te hoy?"
-      />
+      />*/}
       <SectionTiles
         title1="Erat ut Sapien, mus curae, morbi dictum duis"
         title2="aenean auctor at Dictum."
@@ -45,16 +51,16 @@ const Homepage = (props) => {
         bgImageOpacity={1}
         image="https://uploads.divjoy.com/undraw-chatting_2yvo.svg"
       />
-            <CtaSectionBgImage
+      <CtaSectionBgImage
         bg="dark"
-        textColor="light"
+        textColor="white"
         size="sm"
         bgImage="https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_960_720.jpg"
         bgImageOpacity={0.8}
         title="Check out our products"
         subtitle=""
         buttonText="Explore"
-        buttonColor="light"
+        buttonColor="primary"
         buttonOnClick={() => {
           // Navigate to pricing page
           navigateTo("/about");

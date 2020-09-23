@@ -2,10 +2,21 @@
     padding: 3.5em 0 2.5em 0;
     position: relative;
   }
+  @media screen and (max-width:480px){
+    .wrapper {
+        padding: 3.5em 1.5em;
+        position: relative;
+    }
+  }
   
   .wrapper > .inner {
     margin: 0 auto;
     width: 70em;
+  }
+  @media screen and (max-width: 768px){
+    .wrapper > .inner {
+      width: 100%;
+    }
   }
   
   .wrapper.sidebar > .inner {
@@ -27,11 +38,25 @@
     width: 75%;
     padding: 0 4em 0 0;
   }
+@media screen and (max-width:480px){
+    .wrapper.sidebar > .inner > .content {
+        width: 100%;
+        padding: 0;
+    }
+}
+
   
   .wrapper.sidebar > .inner > .sidebar {
     width: 25%;
     margin: 0 auto;
   }
+@media screen and (max-width:480px){
+    .wrapper.sidebar > .inner > .sidebar {
+        width: 100%;
+        margin: auto;
+    }
+}
+
   
   .wrapper.sidebar.left > .inner {
     -moz-flex-direction: row-reverse;
@@ -98,7 +123,7 @@
   
   header.major:after {
     /*background-color: rgba(144, 144, 144, 0.25);*/
-    background-color: pink;
+    background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
   }
   
   
@@ -110,6 +135,11 @@
 
 .form-group {
     width: 90%;
+}
+@media screen and (max-width:480px) {
+    .form-group {
+        width: 100%;
+    }
 }
 
 .followus {
@@ -134,10 +164,20 @@ input {
     width: 100%;
 }
 
+.special {
+    background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
+    color: white;
+    width: 100%;
+    padding: 0rem 5rem;
+    margin-top: 2rem;
+}
+
 .special:focus,
 .special:hover,
 .special:active {
     box-shadow: inset 0 0 0 2px rgb(12, 199, 12);
+    background:  rgb(12, 199, 12);
+    color: white!important;
 }
 
 

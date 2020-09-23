@@ -29,7 +29,20 @@
 
   nav div ul li {
     list-style: none;
+    outline: white;
+    outline-color: white;
+    background-color: transparent!important;
+    background: transparent!important;
+
   }
+  nav div ul li a{
+    list-style: none;
+    outline: white;
+    outline-color: white;
+    color: white;
+    border: none;
+  }
+
 @media screen and (max-width:991px) {
   #navbar-nav{
     display: none!important;
