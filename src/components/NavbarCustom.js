@@ -4,7 +4,7 @@ import { Link, navigateTo } from "gatsby";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Dropdown from 'react-bootstrap/Dropdown'
+import Dropdown from "react-bootstrap/Dropdown";
 
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -46,24 +46,32 @@ const NavbarCustom = (props) => {
               ></img>
             </Navbar.Brand>
           </Nav.Item>*/}
-            <Navbar.Brand /*as={Link} to="/"*/>
-          <Dropdown>
-  <Dropdown.Toggle variant="" id="dropdown-basic">
-  <img
-                className="d-inline-block align-top"
-                src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
-                alt="Logo"
-                height="40"
-              ></img>
-  </Dropdown.Toggle>
+          <Navbar.Brand /*as={Link} to="/"*/>
+            <Dropdown>
+              <Dropdown.Toggle variant="" id="dropdown-basic">
+                <img
+                  className="d-inline-block align-top"
+                  src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
+                  alt="Logo"
+                  height="40"
+                ></img>
+              </Dropdown.Toggle>
 
-  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-  </Dropdown.Menu>
-</Dropdown>
-</Navbar.Brand>
+              <Dropdown.Menu>
+                {/*<Dropdown.Item as={Link} to="/en/home">
+                  {" "}
+                  <img
+                    className="d-inline-block align-top"
+                    src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601579192/rbl-art-designs/united-states-of-america-flag-3d-round-icon-256_gbffry.png"
+                    alt="Logo"
+                    height="40"
+                  ></img>
+        </Dropdown.Item>*/}
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="navbar-nav"
             className="border-0"
@@ -107,7 +115,6 @@ const NavbarCustom = (props) => {
                   Contacto
                 </Nav.Link>
               </Nav.Item>
-
 
               <NavDropdown
                 as={Link}
