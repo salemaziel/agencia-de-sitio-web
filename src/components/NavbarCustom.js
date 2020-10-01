@@ -86,7 +86,7 @@ const NavbarCustom = (props) => {
             >
               <Nav.Item to="/about" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/about" active={false}>
-                  Quien Somos
+                  Quienes Somos
                 </Nav.Link>
               </Nav.Item>
 

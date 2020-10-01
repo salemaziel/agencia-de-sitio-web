@@ -19,7 +19,7 @@ const AboutPage = (props) => {
         size="sm"
         bgImage=""
         bgImageOpacity={0.8}
-        title="We Are Who We Are"
+        title="Quienes Somos"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo."
       />
       <div style={{backgroundImage: 'url(https://res.cloudinary.com/dexdumfqy/image/upload/v1600848134/rbl-art-designs/circle-dots-background_npogwh.svg)'}} >

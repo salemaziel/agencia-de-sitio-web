@@ -18,10 +18,7 @@ import SectionWaves from "../../SectionWaves";
 const Homepage = (props) => {
   return (
     <>
-      <Helmet>
-        <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
-      </Helmet>
-      <SectionWaves headline="Bienvenidos" subtitle="¿Cómo podemos ayudar te hoy?" />
+      <SectionWaves headline="Bienvenidos" /*subtitle="¿Cómo podemos ayudar te hoy?"*/ subtitle="¿En que podemos servirle hoy?" />
       {/*<SectionHero
         bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg"
         headline="Bienvenidos"
@@ -37,7 +34,7 @@ const Homepage = (props) => {
       />
 
       <FeaturesSectionZigzag
-        bg=""
+        bg="white"
         textColor="dark"
         size="md"
         bgImage=""
@@ -46,7 +43,7 @@ const Homepage = (props) => {
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
       />
       <FeaturesSectionPic3List
-        bg=""
+        bg="white"
         textColor="dark"
         size="md"
         bgImage=""
@@ -54,7 +51,7 @@ const Homepage = (props) => {
         image="https://uploads.divjoy.com/undraw-chatting_2yvo.svg"
       />
             <PricingCardsSection
-        bg=""
+        bg="white"
         textColor="dark"
         size="md"
         bgImage=""
@@ -68,9 +65,9 @@ const Homepage = (props) => {
         size="sm"
         bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600837824/rbl-art-designs/smartphone-1894723_1920_yti9if.jpg"
         bgImageOpacity={0.8}
-        title="Check out our products"
+        title="Reservar Una Consulta"
         subtitle=""
-        buttonText="Explore"
+        buttonText="Reservar"
         buttonColor="primary"
         buttonOnClick={() => {
           // Navigate to pricing page
