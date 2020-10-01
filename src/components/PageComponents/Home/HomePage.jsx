@@ -7,6 +7,8 @@ import FeaturesSectionZigzag from "../../FeaturesSectionZigzag";
 import FeaturesSectionPic3List from "../../FeaturesSectionPic3List.js";
 import CtaSectionBgImage from "../../CtaSectionBgImage";
 
+import PricingCardsSection from '../../PricingCardsSection'
+
 import { Helmet } from "react-helmet";
 
 import Fade from "react-reveal/Fade";
@@ -35,7 +37,7 @@ const Homepage = (props) => {
       />
 
       <FeaturesSectionZigzag
-        bg="white"
+        bg=""
         textColor="dark"
         size="md"
         bgImage=""
@@ -44,12 +46,21 @@ const Homepage = (props) => {
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
       />
       <FeaturesSectionPic3List
-        bg="white"
+        bg=""
         textColor="dark"
         size="md"
         bgImage=""
         bgImageOpacity={1}
         image="https://uploads.divjoy.com/undraw-chatting_2yvo.svg"
+      />
+            <PricingCardsSection
+        bg=""
+        textColor="dark"
+        size="md"
+        bgImage=""
+        bgImageOpacity={1}
+        title="Pricing"
+        subtitle="Choose the plan that makes sense for you. All plans include a 14-day free trial."
       />
       <CtaSectionBgImage
         bg="dark"

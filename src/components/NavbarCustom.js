@@ -4,6 +4,7 @@ import { Link, navigateTo } from "gatsby";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Dropdown from 'react-bootstrap/Dropdown'
 
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -35,17 +36,34 @@ const NavbarCustom = (props) => {
         className={navStyles.headerNavbar}
       >
         <Container>
-          <Nav.Item to="/">
+          {/*<Nav.Item to="/">
             <Navbar.Brand as={Link} to="/">
               <img
                 className="d-inline-block align-top"
-                src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600726838/rbl-art-designs/logo-idea1-250px_cnhe7j.png"
+                src="https://www.pikpng.com/pngl/m/296-2969618_mexico-round-flag-mexican-flag-backgrounds-for-powerpoint.png"
                 alt="Logo"
                 height="60"
               ></img>
             </Navbar.Brand>
-          </Nav.Item>
+          </Nav.Item>*/}
+            <Navbar.Brand /*as={Link} to="/"*/>
+          <Dropdown>
+  <Dropdown.Toggle variant="" id="dropdown-basic">
+  <img
+                className="d-inline-block align-top"
+                src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
+                alt="Logo"
+                height="40"
+              ></img>
+  </Dropdown.Toggle>
 
+  <Dropdown.Menu>
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+</Navbar.Brand>
           <Navbar.Toggle
             aria-controls="navbar-nav"
             className="border-0"
