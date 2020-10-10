@@ -11,6 +11,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        // add relative path to your layout component
+        component: `${__dirname}/src/components/layout.js`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

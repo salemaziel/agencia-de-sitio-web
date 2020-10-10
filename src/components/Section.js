@@ -20,7 +20,7 @@ function Section(props) {
   return (
     <section
       className={
-        "SectionComponent pt-5 position-relative" +
+        "SectionComponent py-5 position-relative" +
         (props.bg ? ` bg-${props.bg}` : "") +
         (props.textColor ? ` text-${props.textColor}` : "") +
         (className ? ` ${className}` : "")
