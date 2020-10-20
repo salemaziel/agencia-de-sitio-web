@@ -16,7 +16,7 @@ import { FaHome } from "react-icons/fa";
 
 //then
 
-const NavbarCustom = (props) => {
+const NavbarCustomEN = (props) => {
   const [showNav, setShowNav] = useState();
   const [scroll, setScroll] = useState(false);
 
@@ -48,25 +48,24 @@ const NavbarCustom = (props) => {
           </Nav.Item>*/}
           <Navbar.Brand /*as={Link} to="/"*/>
             <Dropdown>
-            <Dropdown.Toggle variant="" id="dropdown-basic">
+              <Dropdown.Toggle variant="" id="dropdown-basic">
                 <img
                   className="d-inline-block align-top"
-                  src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
+                  src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601579192/rbl-art-designs/united-states-of-america-flag-3d-round-icon-256_gbffry.png"
                   alt="Logo"
                   height="40"
                 ></img>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/en/home">
+                <Dropdown.Item as={Link} to="/">
                   {" "}
                   <img
                     className="d-inline-block align-top"
-                    src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601579192/rbl-art-designs/united-states-of-america-flag-3d-round-icon-256_gbffry.png"
+                    src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
                     alt="Logo"
                     height="40"
-                  ></img>
-                  English
+                  ></img> Espanol
                 </Dropdown.Item>
                 {/*<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>*/}
@@ -93,9 +92,9 @@ const NavbarCustom = (props) => {
               defaultActiveKey="/"
               onSelect={(selectedKey) => navigateTo(`${selectedKey}`)}
             >
-              <Nav.Item to="/quienes-somos" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/quienes-somos" active={false}>
-                  Quienes Somos
+              <Nav.Item to="/about" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/about" active={false}>
+                  Who We Are
                 </Nav.Link>
               </Nav.Item>
 
@@ -107,22 +106,22 @@ const NavbarCustom = (props) => {
 
               <Nav.Item to="/servicios" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/servicios" active={false}>
-                  Servicios
+                  Services
                 </Nav.Link>
               </Nav.Item>
 
               <Nav.Item to="/contacto" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/contacto" active={false}>
-                  Contacto
+                  Contact
                 </Nav.Link>
               </Nav.Item>
 
               <NavDropdown
                 as={Link}
-                href="/mas"
-                to="/mas"
+                href="/en/more"
+                to="/en/more"
                 eventKey="more"
-                title="Más"
+                title="More"
                 id="nav-dropdown-about"
                 className={navStyles.navItem}
               >
@@ -174,13 +173,13 @@ const NavbarCustom = (props) => {
                 <FaHome />
               </Link>,
               <Link rel="preload" className={navStyles.navItem} to="/about">
-                Quien Somos
+                Who We Are
               </Link>,
               <Link rel="preload" className={navStyles.navItem} to="/contacto">
-                Contacto
+                Contact
               </Link>,
               <Link rel="preload" className={navStyles.navItem} to="/servicios">
-                Servicios
+                Services
               </Link>,
             ]}
             itemStyle={{
@@ -208,4 +207,4 @@ const NavbarCustom = (props) => {
   );
 };
 
-export default NavbarCustom;
+export default NavbarCustomEN;

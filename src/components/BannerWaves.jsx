@@ -4,7 +4,7 @@ import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import "./SectionWaves.scss";
 
-const SectionWaves = (props) => {
+const BannerWaves = (props) => {
   return (
     <section className="SectionWaves">
       <div className="header">
@@ -78,4 +78,4 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
   );
 };
 
-export default SectionWaves;
+export default BannerWaves;

@@ -1,18 +1,18 @@
 import React from "react";
 //import Homepage from '../components/PageComponents/Home/HomePage
 import { Button, Jumbotron } from "react-bootstrap";
-import Layout from "../../components/layout";
+import LayoutEN from "../../components/layoutEN";
 import SEO from "../../components/seo";
 import { Link } from "gatsby";
 
-import HomePage from '../../components/PageComponents/Home/HomePage'
+import HomePageEN from '../../components/PageComponents/en/Home/HomePageEN'
 
 const IndexPage = () => (
-  <Layout>
+  <LayoutEN>
     <SEO title="Home US_En" />
-    <HomePage />
+    <HomePageEN />
 
-  </Layout>
+  </LayoutEN>
 );
 
 export default IndexPage;
