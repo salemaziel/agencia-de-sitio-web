@@ -41,8 +41,8 @@ function CardsWBgSection(props) {
             },
             {
               headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836618/rbl-art-designs/digital-marketing-1433427_1920_ikotj9.jpg",
-              avatarImage: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
-              name: "Christian Tuna",
+              avatarImage: "https://rosieshouse.org/wp-content/uploads/2016/06/avatar-large-square-300x300.jpg",
+              name: "Christian Luna",
               role: "Sales, Marketing, Communications",
               bio:
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
