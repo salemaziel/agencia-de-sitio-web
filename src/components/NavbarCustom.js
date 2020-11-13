@@ -65,8 +65,7 @@ const NavbarCustom = (props) => {
                     src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601579192/rbl-art-designs/united-states-of-america-flag-3d-round-icon-256_gbffry.png"
                     alt="Logo"
                     height="40"
-                  ></img>
-                  English
+                  ></img> English
                 </Dropdown.Item>
                 {/*<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>*/}

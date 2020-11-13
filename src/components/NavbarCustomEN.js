@@ -65,7 +65,7 @@ const NavbarCustomEN = (props) => {
                     src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
                     alt="Logo"
                     height="40"
-                  ></img> Espanol
+                  ></img> Español
                 </Dropdown.Item>
                 {/*<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>*/}
