@@ -1,9 +1,4 @@
 /* Tiles */
-
-.sectionTiles {
-    margin: 4rem auto 1rem;
-}
-
 .tiles {
     display: -moz-flex;
     display: -webkit-flex;

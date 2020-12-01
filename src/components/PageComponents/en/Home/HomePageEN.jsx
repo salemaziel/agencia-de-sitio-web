@@ -26,7 +26,7 @@ const HomepageEN = (props) => {
       />*/}
       <SectionTiles
         title1="Automation, Apps, and WebApps are Here."
-        title2="Is Your Business Using Them To Your Benefit? Your Competitors Are"
+        title2="Is Your Business Using Them To Your Advantage?"
         subdescription="Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod
       sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus
       quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.

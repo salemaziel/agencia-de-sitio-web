@@ -58,7 +58,7 @@ const NavbarCustom = (props) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/en/home">
+                <Dropdown.Item as={Link} to="/en/home" className={navStyles.pickLang}>
                   {" "}
                   <img
                     className="d-inline-block align-top"

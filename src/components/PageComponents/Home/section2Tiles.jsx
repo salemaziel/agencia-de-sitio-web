@@ -1,6 +1,6 @@
 import React from "react";
 
-import sectiontileStyles from "./home.module.css";
+import sectiontileStyles from "./sectionTiles.module.css";
 
 import Tiles from "./tiles";
 import Fade from "react-reveal/Fade";
