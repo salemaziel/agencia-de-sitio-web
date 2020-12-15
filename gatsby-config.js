@@ -2,8 +2,8 @@ const config = require('./config/site');
 
 module.exports = {
   siteMetadata: {
-    title: `Agencia Web`,
-    description: `Agencia Web`,
+    title: `Via Del Web`,
+    description: `Digital Marketing and Website Design`,
     author: `@salemaziel`,
     siteUrl: `https://agencia-web.rblart.design`,
   },
@@ -30,13 +30,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Agencia Web`,
-        short_name: `AgenciaWeb`,
+        name: `Via Del Web Digital Marketing`,
+        short_name: `Via Del Web`,
         start_url: `/`,
         background_color: `#2579bc`,
         theme_color: `#2579bc`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
 //    { 

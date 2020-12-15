@@ -156,6 +156,7 @@ body, html, #app {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+  margin: 25rem auto;
 }
 
 .imageview {
@@ -163,8 +164,10 @@ body, html, #app {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
-  position: absolute;
+  /*position: absolute;*/
+  position: static;
   top: 90px;
+  z-index: 10;
 }
 
 .imageview > * {
@@ -205,6 +208,7 @@ body, html, #app {
 .imageview-info button:hover {
   -webkit-animation: swell 300ms ease-in-out;
           animation: swell 300ms ease-in-out;
+          box-shadow: none;
 }
 .imageview-info h2 {
   font-family: 'Oswald';

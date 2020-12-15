@@ -13,12 +13,12 @@ import { Helmet } from "react-helmet";
 
 import Fade from "react-reveal/Fade";
 import { navigateTo } from "gatsby";
-import SectionWaves from "../../SectionWaves";
+import SectionWavesESP from "../../SectionWavesESP";
 
 const Homepage = (props) => {
   return (
     <>
-      <SectionWaves headline="Bienvenidos" /*subtitle="¿Cómo podemos ayudar te hoy?"*/ subtitle="¿En que podemos servirle hoy?" />
+      <SectionWavesESP headline="Bienvenidos" /*subtitle="¿Cómo podemos ayudar te hoy?"*/ subtitle="¿En que podemos servirle hoy?" />
       {/*<SectionHero
         bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg"
         headline="Bienvenidos"

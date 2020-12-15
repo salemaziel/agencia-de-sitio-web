@@ -11,6 +11,7 @@ import Button from "react-bootstrap/Button";
 import SideNav from "react-simple-sidenav";
 
 import navStyles from "./navbar.module.css";
+import {LogoSquare} from '../images/index'
 
 import { FaHome } from "react-icons/fa";
 
@@ -36,18 +37,19 @@ const NavbarCustomEN = (props) => {
         className={navStyles.headerNavbar}
       >
         <Container>
-          {/*<Nav.Item to="/">
-            <Navbar.Brand as={Link} to="/">
-              <img
-                className="d-inline-block align-top"
-                src="https://www.pikpng.com/pngl/m/296-2969618_mexico-round-flag-mexican-flag-backgrounds-for-powerpoint.png"
+
+          <Navbar.Brand>
+            <Link to="/en/home" rel="preload">
+          <img
+          className={scroll ? "d-inline-block align-top" : "hide"}
+                src={LogoSquare}
                 alt="Logo"
-                height="60"
+                height="50"
               ></img>
-            </Navbar.Brand>
-          </Nav.Item>*/}
-          <Navbar.Brand /*as={Link} to="/"*/>
-            <Dropdown>
+              </Link>
+            <Dropdown
+            className={scroll ? "hide" : "show"}
+            >
               <Dropdown.Toggle variant="" id="dropdown-basic">
                 <img
                   className="d-inline-block align-top"
@@ -58,7 +60,7 @@ const NavbarCustomEN = (props) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/" className={navStyles.pickLang}>
+                <Dropdown.Item as={Link} to="/esp/home" className={navStyles.pickLang}>
                   {" "}
                   <img
                     className="d-inline-block align-top"
@@ -92,8 +94,8 @@ const NavbarCustomEN = (props) => {
               defaultActiveKey="/"
               onSelect={(selectedKey) => navigateTo(`${selectedKey}`)}
             >
-              <Nav.Item to="/about" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/about" active={false}>
+              <Nav.Item to="/en/about" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/en/about" active={false}>
                   Who We Are
                 </Nav.Link>
               </Nav.Item>
@@ -104,19 +106,44 @@ const NavbarCustomEN = (props) => {
                 </Nav.Link>
           </Nav.Item>*/}
 
-              <Nav.Item to="/servicios" className={navStyles.navItem}>
+              {/*<Nav.Item to="/servicios" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/servicios" active={false}>
                   Services
                 </Nav.Link>
-              </Nav.Item>
+        </Nav.Item>*/}
+              <NavDropdown
+                as={Link}
+                href="/services"
+                to="/service"
+                eventKey="services"
+                title="Services"
+                id="nav-dropdown-about"
+                className={navStyles.navItem}
+              >
+                <NavDropdown.Item eventKey="/en/services/contentmarketing">
+                  Content Marketing
+                </NavDropdown.Item>
 
-              <Nav.Item to="/contacto" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/contacto" active={false}>
+
+                <NavDropdown.Item eventKey="/en/services/directorylistings">
+                  Directory Listings
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey="/en/services/socialmediamarketing">
+                  Social Media Marketing
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey="/en/services/websitedesign">
+                  {" "}
+                  Website Design{" "}
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <Nav.Item to="/en/contact" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/en/contact" active={false}>
                   Contact
                 </Nav.Link>
               </Nav.Item>
 
-              <NavDropdown
+              {/*<NavDropdown
                 as={Link}
                 href="/en/more"
                 to="/en/more"
@@ -138,7 +165,7 @@ const NavbarCustomEN = (props) => {
                 <NavDropdown.Item eventKey="/#">
                   Dropdown Item 4
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown>*/}
             </Nav>
             <Nav className="mr-1"></Nav>
           </Navbar>

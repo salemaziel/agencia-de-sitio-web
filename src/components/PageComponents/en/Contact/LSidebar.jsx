@@ -18,8 +18,8 @@ const LSidebar = () => (
                    <p className="mb-2"><a href="tel:#">760-555-5555</a></p>**/}
                   <h4 className="followus">Email</h4>
                   <p className="followus">
-                    <a href="mailto:info@salemaziel.com">
-                    info@salemaziel.com
+                    <a href="mailto:salem@viadelweb.com">
+                    salem@viadelweb.com
                     </a>
                   </p>
                 <h4 className="followus">Follow Us</h4>

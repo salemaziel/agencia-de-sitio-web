@@ -1,0 +1,12 @@
+.Cards {
+  &__avatar-wrapper {
+    margin-top: -90px;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: white;
+    z-index: 1;
+  }
+  &__link {
+    color: #217ebd;
+  }
+}

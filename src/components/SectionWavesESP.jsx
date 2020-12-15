@@ -1,10 +1,11 @@
 import React from "react";
+import { Col, Row, Container } from "react-bootstrap";
 import Typist from "react-typist";
-
+import CalendlyButton from './CalendlyButtonEN'
 import "react-typist/dist/Typist.css";
 import "./SectionWaves.scss";
 
-const SectionWaves = (props) => {
+const SectionWavesESP = (props) => {
   return (
     <section className="SectionWaves">
       <div className="header">
@@ -18,6 +19,7 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
       </g>
     </svg>*/}
           {/*<h1>Simple CSS Waves</h1>*/}
+          <div className="d-block">
           <Typist startDelay={200} cursor={{ show: false }}>
             <h1 /*style={{ color: "white", textShadow: "2px 2px 4px black" }}*/>
               {props.headline}
@@ -33,7 +35,20 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
               {props.subtitle}
             </h3>
           </Typist>
+          </div>
+
+
         </div>
+        <Container>
+        <Row className="justify-content-center">
+            <Col>
+                <CalendlyButton
+                
+                />
+            </Col>
+          </Row>
+        </Container>
+
         {/*Waves Container*/}
         <div>
           <svg
@@ -78,4 +93,4 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
   );
 };
 
-export default SectionWaves;
+export default SectionWavesESP;

@@ -4,12 +4,12 @@ import SectionOne from "./Section1Intro";
 import SectionTwo from "./sectionTwo";
 import SectionThree from "./sectionThree";
 
-import Banner from "../../banner";
-import FaqSimpleSection from "../../FaqSimpleSection";
+import Banner from "../../../banner";
+import FaqSimpleSection from "../../../FaqSimpleSection";
 import SectionIntro from './Section1Intro'
-import CardsWBgSection from "../../CardsWBgSection";
+import CardsWBgSection from "../../../CardsWBgSection";
 
-const AboutPage = (props) => {
+const AboutPageEN = (props) => {
   return (
     <>
       <Banner bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg" />
@@ -47,4 +47,4 @@ const AboutPage = (props) => {
   );
 };
 
-export default AboutPage;
+export default AboutPageEN;

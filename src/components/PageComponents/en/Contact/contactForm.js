@@ -1,6 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
 import Form from "react-bootstrap/Form"
+import Col from 'react-bootstrap/Col'
 //import Button from 'react-bootstrap/Button'
 
 
@@ -45,7 +46,6 @@ export default function ContactForm() {
         <input type="hidden" name="form-name" value="ContactForm" />
 
         <Form.Row>
-          {/*<Col>*/}
             <Form.Group>
               <label style={{ display: "none" }} htmlFor="name">
                 Name
@@ -54,13 +54,11 @@ export default function ContactForm() {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Name"
+                placeholder="Name*"
                 required
               />
             </Form.Group>
-        {/*  </Col> 
-          <Col>*/}
-          {/*  <Form.Group>
+           {/*<Form.Group>
               <label htmlFor="name" style={{ display: "none" }}>
                 Last Name
               </label>
@@ -72,8 +70,7 @@ export default function ContactForm() {
                 required
                 onClick={handleChange}
               />
-            </Form.Group>
-          </Col> */}
+            </Form.Group>*/}
         </Form.Row>
 
         <Form.Row>
@@ -86,7 +83,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email"
+                placeholder="Business Email*"
                 required
                 onChange={handleChange}
               />
@@ -103,7 +100,38 @@ export default function ContactForm() {
                 type="tel"
                 name="phone"
                 id="phone"
-                placeholder="Phone"
+                placeholder="Phone Number*"
+                onChange={handleChange}
+              />
+            </Form.Group>
+       {/* </Col> */}
+        </Form.Row>
+
+        <Form.Row>
+            <Form.Group>
+              <label htmlFor="tel" style={{ display: "none" }}>
+                Current Website
+              </label>
+              <input
+                type="text"
+                name="currentwebsite"
+                id="currentwebsite"
+                placeholder="Current Website"
+                onChange={handleChange}
+              />
+            </Form.Group>
+       {/* </Col> */}
+        </Form.Row>
+        <Form.Row>
+            <Form.Group>
+              <label htmlFor="tel" style={{ display: "none" }}>
+                Current Website
+              </label>
+              <input
+                type="text"
+                name="currentwebsite"
+                id="currentwebsite"
+                placeholder="What Industry Are You In?*"
                 onChange={handleChange}
               />
             </Form.Group>

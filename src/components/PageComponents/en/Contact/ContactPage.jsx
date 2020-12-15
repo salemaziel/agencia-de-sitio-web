@@ -1,14 +1,14 @@
 import React from "react";
-import Banner from "../../banner";
+import Banner from "../../../banner";
 import SectionOne from "./SectionOne";
 
 import "./contact.css";
 
-const ContactPage = () => (
+const ContactPageEN = () => (
   <>
-    <Banner bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600594974/rbl-art-designs/sunset-1509132_pajczh.jpg" />{" "}
+    <Banner bgImage="" />{" "}
     <SectionOne />
   </>
 );
 
-export default ContactPage;
+export default ContactPageEN;

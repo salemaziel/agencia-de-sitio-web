@@ -12,6 +12,8 @@ import SideNav from "react-simple-sidenav";
 
 import navStyles from "./navbar.module.css";
 
+import {LogoSquare} from '../images/index'
+
 import { FaHome } from "react-icons/fa";
 
 //then
@@ -36,18 +38,19 @@ const NavbarCustom = (props) => {
         className={navStyles.headerNavbar}
       >
         <Container>
-          {/*<Nav.Item to="/">
-            <Navbar.Brand as={Link} to="/">
-              <img
-                className="d-inline-block align-top"
-                src="https://www.pikpng.com/pngl/m/296-2969618_mexico-round-flag-mexican-flag-backgrounds-for-powerpoint.png"
+
+          <Navbar.Brand >
+            <Link to="/esp/home" rel="preload">
+          <img
+          className={scroll ? "d-inline-block align-top" : "hide"}
+                src={LogoSquare}
                 alt="Logo"
-                height="60"
+                height="50"
               ></img>
-            </Navbar.Brand>
-          </Nav.Item>*/}
-          <Navbar.Brand /*as={Link} to="/"*/>
-            <Dropdown>
+              </Link>
+            <Dropdown
+            className={scroll ? "hide" : "show"}
+            >
             <Dropdown.Toggle variant="" id="dropdown-basic">
                 <img
                   className="d-inline-block align-top"
@@ -98,17 +101,43 @@ const NavbarCustom = (props) => {
                 </Nav.Link>
               </Nav.Item>
 
+              <NavDropdown
+                as={Link}
+                href="/services"
+                to="/service"
+                eventKey="services"
+                title="Servicios"
+                id="nav-dropdown-about"
+                className={navStyles.navItem}
+              >
+                <NavDropdown.Item eventKey="/disenoweb">
+                  {" "}
+                  Diseño Web{" "}
+                </NavDropdown.Item>                
+
+
+                <NavDropdown.Item eventKey="/listadosdedirectorio">
+                Listados De Directorio
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey="/marketingdecontenidos">
+                Marketing De Contenidos
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey="/marketingderedessociales">
+                Marketing De Redes Sociales
+                </NavDropdown.Item>
+
+                <NavDropdown.Item eventKey="/SEO">
+                  {" "}
+                  S.E.O.{" "}
+                </NavDropdown.Item>
+
+              </NavDropdown>
+
               {/*<Nav.Item to="/faq" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/faq" active={false}>
                   FAQ
                 </Nav.Link>
           </Nav.Item>*/}
-
-              <Nav.Item to="/servicios" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/servicios" active={false}>
-                  Servicios
-                </Nav.Link>
-              </Nav.Item>
 
               <Nav.Item to="/contacto" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/contacto" active={false}>
@@ -116,7 +145,7 @@ const NavbarCustom = (props) => {
                 </Nav.Link>
               </Nav.Item>
 
-              <NavDropdown
+              {/*<NavDropdown
                 as={Link}
                 href="/mas"
                 to="/mas"
@@ -138,7 +167,7 @@ const NavbarCustom = (props) => {
                 <NavDropdown.Item eventKey="/#">
                   Dropdown Item 4
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown>*/}
             </Nav>
             <Nav className="mr-1"></Nav>
           </Navbar>
