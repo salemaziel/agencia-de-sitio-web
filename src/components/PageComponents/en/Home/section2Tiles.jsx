@@ -33,30 +33,31 @@ const SectionTiles = (props) => {
                 },
                 {
                   imgSrc:
-                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836930/rbl-art-designs/app-store-1174440_1920-square_kywhnk.jpg",
+                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600849775/rbl-art-designs/consultation-1281-square_rh27uu.jpg",
                   imgAlt: "image",
                   link: "/#",
-                  title: "Build An App",
+                  title: "Digital Marketing Services",
                   description:
                     "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                   style: "2",
                 },
+
                 {
                   imgSrc:
                     "https://res.cloudinary.com/dexdumfqy/image/upload/v1600837492/rbl-art-designs/laptop-3174729_1200-square_luhksj.jpg",
                   imgAlt: "image",
                   link: "/#",
-                  title: "Other Technology Solutions",
+                  title: "Web Service Automation",
                   description:
                     "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                   style: "3",
                 },
                 {
                   imgSrc:
-                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600849775/rbl-art-designs/consultation-1281-square_rh27uu.jpg",
+                    "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836930/rbl-art-designs/app-store-1174440_1920-square_kywhnk.jpg",
                   imgAlt: "image",
                   link: "/#",
-                  title: "Consultant Services",
+                  title: "Build An App",
                   description:
                     "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
                   style: "4",

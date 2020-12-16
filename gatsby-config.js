@@ -24,6 +24,14 @@ module.exports = {
 //        sitemap: 'https://salemaziel.com/sitemap.xml',
 //      }
 //    },
+{
+  resolve: `gatsby-plugin-hotjar`,
+  options: {
+    includeInDevelopment: false, // optional parameter to include script in development
+    id: 2159413,
+    sv: 6,
+  },
+},
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,

@@ -11,7 +11,7 @@ import Button from "react-bootstrap/Button";
 import SideNav from "react-simple-sidenav";
 
 import navStyles from "./navbar.module.css";
-import {LogoSquare} from '../images/index'
+import { LogoSquare } from "../images/index";
 
 import { FaHome } from "react-icons/fa";
 
@@ -37,19 +37,15 @@ const NavbarCustomEN = (props) => {
         className={navStyles.headerNavbar}
       >
         <Container>
-
           <Navbar.Brand>
             <Link to="/en/home" rel="preload">
-          <img
-          className={scroll ? "d-inline-block align-top" : "hide"}
+              <img
+                className={scroll ? "d-inline-block align-top navLogo" : "hide"}
                 src={LogoSquare}
-                alt="Logo"
-                height="50"
+                alt="Via Del Web Logo"
               ></img>
-              </Link>
-            <Dropdown
-            className={scroll ? "hide" : "show"}
-            >
+            </Link>
+            <Dropdown className={scroll ? "hide" : "show"}>
               <Dropdown.Toggle variant="" id="dropdown-basic">
                 <img
                   className="d-inline-block align-top"
@@ -60,14 +56,19 @@ const NavbarCustomEN = (props) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/esp/home" className={navStyles.pickLang}>
+                <Dropdown.Item
+                  as={Link}
+                  to="/esp/home"
+                  className={navStyles.pickLang}
+                >
                   {" "}
                   <img
                     className="d-inline-block align-top"
                     src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
                     alt="Logo"
                     height="40"
-                  ></img> Español
+                  ></img>{" "}
+                  Español
                 </Dropdown.Item>
                 {/*<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>*/}
@@ -96,7 +97,12 @@ const NavbarCustomEN = (props) => {
             >
               <Nav.Item to="/en/about" className={navStyles.navItem}>
                 <Nav.Link as={Link} to="/en/about" active={false}>
-                  Who We Are
+                  About Us
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item to="/en/home#" className={navStyles.navItem}>
+                <Nav.Link as={Link} to="/en/home#" active={false}>
+                  Who We Help
                 </Nav.Link>
               </Nav.Item>
 
@@ -124,23 +130,30 @@ const NavbarCustomEN = (props) => {
                   Content Marketing
                 </NavDropdown.Item>
 
-
                 <NavDropdown.Item eventKey="/en/services/directorylistings">
                   Directory Listings
                 </NavDropdown.Item>
                 <NavDropdown.Item eventKey="/en/services/socialmediamarketing">
                   Social Media Marketing
                 </NavDropdown.Item>
+                <NavDropdown.Item eventKey="/en/services/webserviceautomation">
+                  {" "}
+                  Webservice Automation{" "}
+                </NavDropdown.Item>
                 <NavDropdown.Item eventKey="/en/services/websitedesign">
                   {" "}
                   Website Design{" "}
                 </NavDropdown.Item>
               </NavDropdown>
-
-              <Nav.Item to="/en/contact" className={navStyles.navItem}>
-                <Nav.Link as={Link} to="/en/contact" active={false}>
-                  Contact
-                </Nav.Link>
+              <Nav.Item className={navStyles.navItem}>
+                <a
+                href="https://app.viadelweb.com" 
+                rel="nofollow"
+                target="_blank"
+                className="nav-link"
+                >
+                  Client Login
+                </a>
               </Nav.Item>
 
               {/*<NavDropdown
@@ -167,7 +180,14 @@ const NavbarCustomEN = (props) => {
                 </NavDropdown.Item>
               </NavDropdown>*/}
             </Nav>
-            <Nav className="mr-1"></Nav>
+            <Nav className="mr-0">
+            <Nav.Item to="/en/contact" className={navStyles.navItem}>
+                <Button secondary as={Link} to="/en/contact" className={navStyles.CTAButton} active={false}>
+                  Contact Us
+                </Button>
+              </Nav.Item>
+
+            </Nav>
           </Navbar>
           <SideNav
             openFromRight={true}
@@ -196,18 +216,42 @@ const NavbarCustomEN = (props) => {
               margin: "auto",
             }}
             items={[
-              <Link rel="preload" className={navStyles.navItem} to="/">
+              <Link rel="preload" className={navStyles.navItem} to="/en/home">
                 <FaHome />
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/about">
-                Who We Are
+              <Link rel="preload" className={navStyles.navItem} to="/en/about">
+                About Us
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/contacto">
-                Contact
-              </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/servicios">
+              <Link
+                rel="preload"
+                className={navStyles.navItem}
+                to="/en/services"
+              >
                 Services
               </Link>,
+              <Link
+                rel="preload"
+                className={navStyles.navItem}
+                to="/en/home#"
+              >
+                Who We Help
+              </Link>,
+              <Link
+                rel="preload"
+                className={navStyles.navItem}
+                to="/en/contact"
+              >
+                Contact
+              </Link>,
+              <a
+                rel="nofollow"
+                target="_blank"
+                href="https://app.viadelweb.com"
+                className={navStyles.navItem}
+                to="/en/contact"
+              >
+                Client Login
+              </a>,
             ]}
             itemStyle={{
               background: "transparent!important",

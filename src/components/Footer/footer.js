@@ -27,11 +27,11 @@ const Footer = () => (
             <ul className={footerStyles.iconBulleted}>
               <h3>Get In Touch</h3>
               <li className={footerStyles.Social}>
-                  <a href="https://facebook.com"><FaFacebook /></a> 
-                  <a href="https://instagram.com"><FaInstagram /></a>
-                  <a href="https://twitter.com"><FaTwitter /></a>
-                  <a href="https://researchgate.com"><FaResearchgate /></a>
-                  <a href="https://linkedin.com"><FaLinkedin /></a>
+                  <a href="https://facebook.com" rel="nofollow noreferrer" target="_blank" ><FaFacebook /></a> 
+                  <a href="https://instagram.com" rel="nofollow noreferrer" target="_blank"><FaInstagram /></a>
+                  <a href="https://twitter.com" rel="nofollow noreferrer" target="_blank"><FaTwitter /></a>
+                  <a href="https://researchgate.com" rel="nofollow noreferrer" target="_blank"><FaResearchgate /></a>
+                  <a href="https://linkedin.com" rel="nofollow noreferrer" target="_blank"><FaLinkedin /></a>
               </li>
             </ul>
             </div>

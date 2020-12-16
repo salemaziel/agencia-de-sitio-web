@@ -4,7 +4,8 @@ import HeroSectionTxtBtnRight from '../../../../HeroSectionTxtBtnRight'
 import HeroSectionTxtBtnLeft from '../../../../HeroSectionTxtBtnLeft'
 import PortfolioSection from '../../../../PortfolioSection'
 import CardsHomeSection from '../../../../CardsHomeSection'
-
+import {navigateTo} from 'gatsby'
+import CtaSectionBgImage from '../../../../CtaSectionBgImage'
 
 
 const WebsiteDesignPage = (props) => {
@@ -79,6 +80,23 @@ const WebsiteDesignPage = (props) => {
               title=""
               subtitle=""
             />
+                        
+
+<CtaSectionBgImage
+bg="dark"
+textColor="white"
+size="sm"
+bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600837824/rbl-art-designs/smartphone-1894723_1920_yti9if.jpg"
+bgImageOpacity={0.8}
+title="Schedule A Consultation"
+subtitle=""
+buttonText="Get Started"
+buttonColor="primary"
+buttonOnClick={() => {
+// Navigate to pricing page
+navigateTo("/about");
+}}
+/>
 
 
 

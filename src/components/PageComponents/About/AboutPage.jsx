@@ -1,9 +1,4 @@
 import React from "react";
-
-import SectionOne from "./Section1Intro";
-import SectionTwo from "./sectionTwo";
-import SectionThree from "./sectionThree";
-
 import Banner from "../../banner";
 import FaqSimpleSection from "../../FaqSimpleSection";
 import SectionIntro from './Section1Intro'

@@ -31,7 +31,7 @@ function HeroSectionTxtBtnRight(props) {
             className="offset-lg-1 mt-5 mt-lg-0 text-center text-lg-left"
             style={{
               backgroundColor: 'rgba(255,255,255,0.3)',
-              padding: '3rem 2rem 3rem 0',
+              padding: '3rem 2rem 3rem',
               border: '1px solid rgba(255,255,255,0.3)',
               borderRadius: '5px'
             }}

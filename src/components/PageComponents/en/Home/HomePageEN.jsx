@@ -107,9 +107,9 @@ const HomepageEN = (props) => {
         size="sm"
         bgImage="https://res.cloudinary.com/dexdumfqy/image/upload/v1600837824/rbl-art-designs/smartphone-1894723_1920_yti9if.jpg"
         bgImageOpacity={0.8}
-        title="Reservar Una Consulta"
+        title="Schedule A Consultation"
         subtitle=""
-        buttonText="Reservar"
+        buttonText="Get Started"
         buttonColor="primary"
         buttonOnClick={() => {
           // Navigate to pricing page

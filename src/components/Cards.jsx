@@ -28,8 +28,8 @@ function Cards(props) {
                 <Image src={item.iconImage} alt={item.stepTitle} height="128px" />
               </div>
               <h6 className="font-weight-bold mb-2 mt-3">{item.stepNumber}</h6>
-              <p>{item.stepTitle}</p>
-              <Card.Text className="mt-4">{item.stepDescription}</Card.Text>
+              <p style={{fontSize: '1.5rem', color: '#217ebd'}} className="font-weight-bold">{item.stepTitle}</p>
+              <Card.Text className="mt-2">{item.stepDescription}</Card.Text>
               <Card.Text className="" >
               <Link to={item.link} rel="preload" style={{color: '#217ebd', fontWeight: 'bolder'}}>{item.linkText} → </Link>
               </Card.Text>

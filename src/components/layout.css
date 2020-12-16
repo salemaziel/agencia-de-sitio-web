@@ -148,11 +148,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #a1bcd0 !important;
+			color: #a1bcd0;
 		}
 	@media screen and (max-width: 992px){
 		a:hover {
-			color: white!important;
+			color: white;
 		}
 	}
 
@@ -1663,6 +1663,15 @@ input, select, textarea {
 
 .hide {
 	display: none;
+}
+
+.navLogo {
+	height: 80px;
+}
+@media screen and (max-width: 480px){
+	.navLogo{
+		height: 50px;
+	}
 }
 
 

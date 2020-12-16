@@ -1,8 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-
-
 import {
 FaFacebook,
 FaTwitter,
@@ -24,13 +20,13 @@ const LSidebar = () => (
                   </p>
                 <h4 className="followus">Follow Us</h4>
                 <div className="followus">
-                  <a href="https://twitter.com">
+                  <a href="https://twitter.com" rel="nofollow noreferrer" target="_blank">
                     <FaTwitter />
                   </a>
-                  <a href="https://linkedin.com">
+                  <a href="https://linkedin.com" rel="nofollow noreferrer" target="_blank">
                     <FaLinkedin />
                   </a>
-                  <a href="https://facebook.com">
+                  <a href="https://facebook.com" rel="nofollow noreferrer" target="_blank">
                     <FaFacebook />
                   </a>
                 </div>
