@@ -150,7 +150,7 @@ const NavbarCustomTest = (props) => {
               <Nav.Item className={navStyles.navItem}>
                 <a
                 href="https://app.viadelweb.com" 
-                rel="nofollow"
+                rel="nofollow noreferrer"
                 target="_blank"
                 className="nav-link"
                 >
@@ -260,7 +260,7 @@ const NavbarCustomTest = (props) => {
       <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
     </NavDropdown>,
               <a
-                rel="nofollow"
+                rel="nofollow noreferrer"
                 target="_blank"
                 href="https://app.viadelweb.com"
                 className={navStyles.navItem}

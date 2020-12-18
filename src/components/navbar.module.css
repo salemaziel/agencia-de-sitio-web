@@ -31,7 +31,7 @@
     -webkit-transition: 0.4s all ease-in-out;
     -o-transition: 0.4s all ease-in-out;
     transition: 0.4s all ease-in-out;
-    border: solid #217ebd 2px!important;
+    border: solid #217ebd 1px!important;
     box-shadow:0px 1px 10px 0px lightgray;
     border-radius: 10px!important;
     padding: 0.75rem 1rem!important;
@@ -43,7 +43,7 @@
   /*background:rgba(204, 174, 161, 1);
   background-color: rgba(204, 174, 161, 1);*/
   background-color: #217ebd!important;
-  border: solid #217ebd 2px!important;
+  border: solid #217ebd 1px!important;
     color: white!important;
     border-radius: 50px!important;
     -webkit-transition: 0.4s all ease-in-out;

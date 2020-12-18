@@ -152,7 +152,7 @@ const NavbarCustomEN = (props) => {
               <Nav.Item className={navStyles.navItem}>
                 <a
                 href="https://app.viadelweb.com" 
-                rel="nofollow"
+                rel="nofollow noreferrer"
                 target="_blank"
                 className="nav-link"
                 >
@@ -265,7 +265,7 @@ const NavbarCustomEN = (props) => {
               </Link>,
 
               <a
-                rel="nofollow"
+                rel="nofollow noreferrer"
                 target="_blank"
                 href="https://app.viadelweb.com"
                 className={navStyles.navItem}
