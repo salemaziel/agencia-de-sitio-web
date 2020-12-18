@@ -12,8 +12,6 @@ import SideNav from "react-simple-sidenav";
 import NavItem from 'react-bootstrap/NavItem'
 import NavLink from 'react-bootstrap/NavLink'
 
-import FaqNav from './FaqNav'
-
 import navStyles from "./navbar.module.css";
 import { LogoSquare } from "../images/index";
 
@@ -21,7 +19,7 @@ import { FaHome } from "react-icons/fa";
 
 //then
 
-const NavbarCustomEN = (props) => {
+const NavbarCustomTest = (props) => {
   const [showNav, setShowNav] = useState();
   const [scroll, setScroll] = useState(false);
 
@@ -218,7 +216,6 @@ const NavbarCustomEN = (props) => {
               backgroundColor: "transparent",
               color: "black",
               margin: "auto",
-              padding: '0',
             }}
             items={[
               <Link rel="preload" className={navStyles.navItem} to="/en/home">
@@ -227,28 +224,13 @@ const NavbarCustomEN = (props) => {
               <Link rel="preload" className={navStyles.navItem} to="/en/about">
                 About Us
               </Link>,
-            <FaqNav
-            items={[
-              {
-                question: "Services",
-                answer:
-                  "",
-                  listItem1: '',
-                  listItem2: '',
-                  linkTitle1: 'Content Marketing',
-                  link1: '/en/services/contentmarketing',
-                  linkTitle2: 'Directory Listings',
-                  link2: '/en/services/directorylistings',
-                  linkTitle3: 'Social Media Marketing',
-                  link3: '/en/services/socialmediamarketing',
-                  linkTitle4: 'Webservice Automation',
-                  link4: '/en/services/webserviceautomation',
-                  linkTitle5: 'Website Design',
-                  link5: '/en/services/websitedesign',
-
-              },
-            ]}
-          />,
+              <Link
+                rel="preload"
+                className={navStyles.navItem}
+                to="/en/services"
+              >
+                Services
+              </Link>,
               <Link
                 rel="preload"
                 className={navStyles.navItem}
@@ -263,7 +245,20 @@ const NavbarCustomEN = (props) => {
               >
                 Contact
               </Link>,
-
+                            <Link
+                            rel="preload"
+                            className={navStyles.navItem}
+                            to="/test"
+                          >
+                            Test
+                          </Link>,
+      <NavDropdown title="Dropdown" id="nav-dropdown">
+      <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+      <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+      <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+      <NavDropdown.Divider />
+      <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+    </NavDropdown>,
               <a
                 rel="nofollow"
                 target="_blank"
@@ -299,4 +294,4 @@ const NavbarCustomEN = (props) => {
   );
 };
 
-export default NavbarCustomEN;
+export default NavbarTest;

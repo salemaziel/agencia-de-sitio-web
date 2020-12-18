@@ -29,7 +29,7 @@ function CardsWBgSection(props) {
               name: "Salem Aziel",
               role: "Web & App Development, Digital Consultant, Project Management",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
+                "",
             },
             {
               headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836482/rbl-art-designs/camera-2598507_1920_bbrgjn.jpg",
@@ -37,15 +37,15 @@ function CardsWBgSection(props) {
               name: "DaeHyun Yoo",
               role: "Graphic Design, Photography, Videography",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
+                "",
             },
             {
               headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836618/rbl-art-designs/digital-marketing-1433427_1920_ikotj9.jpg",
               avatarImage: "https://rosieshouse.org/wp-content/uploads/2016/06/avatar-large-square-300x300.jpg",
               name: "Uriel Aguilar",
-              role: "Sales, Marketing, Project Management",
+              role: "Digital Consultant, Project Management",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
+                "",
             },
           ]}
         />

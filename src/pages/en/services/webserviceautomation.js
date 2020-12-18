@@ -6,7 +6,7 @@ import AutomationPage from '../../../components/PageComponents/en/Services/Autom
 
 const WebServiceAutomation = () => (
   <LayoutEN>
-    <SEO title="We Service Automation" />
+    <SEO title="Web Service Automation" />
     <AutomationPage />
 
   </LayoutEN>

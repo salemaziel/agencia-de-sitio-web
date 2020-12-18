@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import AspectRatio from "./AspectRatio";
 import Image from "react-bootstrap/Image";
-import "./TeamBios2.scss";
+import "./Cards.scss";
 import {Link} from 'gatsby'
 
 function Cards(props) {
