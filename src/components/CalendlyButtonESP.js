@@ -6,7 +6,7 @@ import calendlyStyle from './CalendlyButton.module.css'
 //  const onClick = () => openPopupWidget({ url, prefill, pageSettings, utm });
 const CalendlyButton = ({ url }, props) => {
     const onClick = () => openPopupWidget({ url:"https://calendly.com/salemaziel/30-min" });
-  return <button onClick={onClick} className={calendlyStyle.whiteBtn} /*className="profile-card__button button--blue"*/ url={url} >{props.buttonText}</button>
+  return <button onClick={onClick} className={calendlyStyle.whiteBtn} /*className="profile-card__button button--blue"*/ url={url} >Reservar Una Consulta</button>
 }
 
 export default CalendlyButton

@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import Typist from "react-typist";
-import CalendlyButton from './CalendlyButtonEN'
+import CalendlyButton from './CalendlyButtonESP'
 import "react-typist/dist/Typist.css";
 import "./SectionWaves.scss";
 

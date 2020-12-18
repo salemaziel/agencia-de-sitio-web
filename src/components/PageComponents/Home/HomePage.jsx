@@ -6,6 +6,8 @@ import SectionThree from "./sectionThree";
 import FeaturesSectionZigzag from "../../FeaturesSectionZigzag";
 import FeaturesSectionPic3List from "../../FeaturesSectionPic3List.js";
 import CtaSectionBgImage from "../../CtaSectionBgImage";
+import CardsHomeSection from "../../CardsHomeSection";
+import HeroSectionTxtBtnRight from "../../HeroSectionTxtBtnRight";
 
 import PricingCardsSection from '../../PricingCardsSection'
 
@@ -33,6 +35,18 @@ const Homepage = (props) => {
       Lorem ipsum dolor sit amet nullam dolore."
       />
 
+<Fade top>
+        <CardsHomeSection
+          bg=""
+          textColor="dark"
+          size="sm"
+          bgImage=""
+          bgImageOpacity={1}
+          title=""
+          subtitle=""
+        />
+      </Fade>
+
       <FeaturesSectionZigzag
         bg="white"
         textColor="dark"
@@ -42,6 +56,33 @@ const Homepage = (props) => {
         title="Funcionalidades"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
       />
+      <Fade top>
+        <HeroSectionTxtBtnRight
+          bg="white"
+          textColor="dark"
+          size="md"
+          bgImage=""
+          bgImageOpacity={0.8}
+          title="Get Online"
+          subtitle="Our digital marketing agency can assist you with all your marketing needs. All the way from search engine optimization campaigns, to customized PPC campaigns and even website design solutions."
+          description1=""
+          description2=""
+          description3=""
+          description4=""
+          description5=""
+          description6=""
+          description7=""
+          buttonText="Get Started"
+          buttonColor="primary"
+          image="https://res.cloudinary.com/dexdumfqy/image/upload/v1600836618/rbl-art-designs/digital-marketing-1433427_1920_ikotj9.jpg"
+          link="/en/contact"
+          /*buttonOnClick={() => {
+          // Navigate to pricing page
+          navigateTo("/");
+        }}*/
+        />
+      </Fade>
+
       <FeaturesSectionPic3List
         bg="white"
         textColor="dark"
@@ -50,7 +91,7 @@ const Homepage = (props) => {
         bgImageOpacity={1}
         image="https://uploads.divjoy.com/undraw-chatting_2yvo.svg"
       />
-            <PricingCardsSection
+            {/*<PricingCardsSection
         bg="white"
         textColor="dark"
         size="md"
@@ -58,7 +99,7 @@ const Homepage = (props) => {
         bgImageOpacity={1}
         title="Pricing"
         subtitle="Choose the plan that makes sense for you. All plans include a 14-day free trial."
-      />
+            />*/}
       <CtaSectionBgImage
         bg="dark"
         textColor="white"

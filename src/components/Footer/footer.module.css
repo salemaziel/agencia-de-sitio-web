@@ -231,11 +231,11 @@ ul.actions li {
   border-bottom: none;
   margin: 0;
 }
-
+/*
 .iconBulleted li a {
   padding-left: 1rem;
 }
-
+*/
 .Social {
   display: flex;
   margin: 0;
@@ -244,7 +244,7 @@ ul.actions li {
 
 .Social a {
   font-size: 2rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 

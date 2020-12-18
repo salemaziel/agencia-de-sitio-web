@@ -9,10 +9,10 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import SideNav from "react-simple-sidenav";
-import NavItem from 'react-bootstrap/NavItem'
-import NavLink from 'react-bootstrap/NavLink'
+import NavItem from "react-bootstrap/NavItem";
+import NavLink from "react-bootstrap/NavLink";
 
-import FaqNav from './FaqNav'
+import FaqNav from "./FaqNav";
 
 import navStyles from "./navbar.module.css";
 import { LogoSquare } from "../images/index";
@@ -151,10 +151,10 @@ const NavbarCustomEN = (props) => {
               </NavDropdown>
               <Nav.Item className={navStyles.navItem}>
                 <a
-                href="https://app.viadelweb.com" 
-                rel="nofollow noreferrer"
-                target="_blank"
-                className="nav-link"
+                  href="https://app.viadelweb.com"
+                  rel="nofollow noreferrer"
+                  target="_blank"
+                  className="nav-link"
                 >
                   Client Login
                 </a>
@@ -185,12 +185,17 @@ const NavbarCustomEN = (props) => {
               </NavDropdown>*/}
             </Nav>
             <Nav className="mr-0">
-            <Nav.Item to="/en/contact" className={navStyles.navItem}>
-                <Button secondary as={Link} to="/en/contact" className={navStyles.CTAButton} active={false}>
+              <Nav.Item to="/en/contact" className={navStyles.navItem}>
+                <Button
+                  secondary
+                  as={Link}
+                  to="/en/contact"
+                  className={navStyles.CTAButton}
+                  active={false}
+                >
                   Contact Us
                 </Button>
               </Nav.Item>
-
             </Nav>
           </Navbar>
           <SideNav
@@ -218,7 +223,7 @@ const NavbarCustomEN = (props) => {
               backgroundColor: "transparent",
               color: "black",
               margin: "auto",
-              padding: '0',
+              padding: "1rem",
             }}
             items={[
               <Link rel="preload" className={navStyles.navItem} to="/en/home">
@@ -227,52 +232,49 @@ const NavbarCustomEN = (props) => {
               <Link rel="preload" className={navStyles.navItem} to="/en/about">
                 About Us
               </Link>,
-            <FaqNav
-            items={[
-              {
-                question: "Services",
-                answer:
-                  "",
-                  listItem1: '',
-                  listItem2: '',
-                  linkTitle1: 'Content Marketing',
-                  link1: '/en/services/contentmarketing',
-                  linkTitle2: 'Directory Listings',
-                  link2: '/en/services/directorylistings',
-                  linkTitle3: 'Social Media Marketing',
-                  link3: '/en/services/socialmediamarketing',
-                  linkTitle4: 'Webservice Automation',
-                  link4: '/en/services/webserviceautomation',
-                  linkTitle5: 'Website Design',
-                  link5: '/en/services/websitedesign',
-
-              },
-            ]}
-          />,
-              <Link
-                rel="preload"
-                className={navStyles.navItem}
-                to="/en/home#"
-              >
+              <FaqNav
+                items={[
+                  {
+                    question: "Services",
+                    answer: "",
+                    listItem1: "",
+                    listItem2: "",
+                    linkTitle1: "Content Marketing",
+                    link1: "/en/services/contentmarketing",
+                    linkTitle2: "Directory Listings",
+                    link2: "/en/services/directorylistings",
+                    linkTitle3: "Social Media Marketing",
+                    link3: "/en/services/socialmediamarketing",
+                    linkTitle4: "Webservice Automation",
+                    link4: "/en/services/webserviceautomation",
+                    linkTitle5: "Website Design",
+                    link5: "/en/services/websitedesign",
+                  },
+                ]}
+              />,
+              <Link rel="preload" className={navStyles.navItem} to="/en/home#">
                 Who We Help
               </Link>,
-              <Link
-                rel="preload"
-                className={navStyles.navItem}
-                to="/en/contact"
-              >
-                Contact
-              </Link>,
-
               <a
                 rel="nofollow noreferrer"
                 target="_blank"
                 href="https://app.viadelweb.com"
                 className={navStyles.navItem}
-                to="/en/contact"
               >
                 Client Login
               </a>,
+              <Nav.Item to="/en/contact" className={navStyles.navItem}>
+              <Button
+                secondary
+                as={Link}
+                to="/en/contact"
+                className={navStyles.CTAButton}
+                active={false}
+              >
+                Contact Us
+              </Button>
+            </Nav.Item>,
+
             ]}
             itemStyle={{
               background: "transparent!important",

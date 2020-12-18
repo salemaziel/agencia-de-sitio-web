@@ -10,7 +10,6 @@ import CtaSectionBgImage from "../../../CtaSectionBgImage";
 import PricingCardsSection from "../../../PricingCardsSection";
 import CardsHomeSection from "../../../CardsHomeSection";
 import HeroSectionTxtBtnRight from "../../../HeroSectionTxtBtnRight";
-
 import { Helmet } from "react-helmet";
 
 import Fade from "react-reveal/Fade";

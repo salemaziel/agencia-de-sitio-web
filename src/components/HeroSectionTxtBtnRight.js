@@ -51,7 +51,7 @@ function HeroSectionTxtBtnRight(props) {
               spaced={true}
               style={{color: 'black!important'}}
             />
-            <Button as={Link} to={props.link}>{props.buttonText}</Button>
+            <Button as={Link} to={props.link} className="py-3 px-5 btn-lg btn-block">{props.buttonText}</Button>
 
           </Col>
         </Row>

@@ -30,7 +30,6 @@ const Footer = () => (
                   <a href="https://facebook.com" rel="nofollow noreferrer" target="_blank" ><FaFacebook /></a> 
                   <a href="https://instagram.com" rel="nofollow noreferrer" target="_blank"><FaInstagram /></a>
                   <a href="https://twitter.com" rel="nofollow noreferrer" target="_blank"><FaTwitter /></a>
-                  <a href="https://researchgate.com" rel="nofollow noreferrer" target="_blank"><FaResearchgate /></a>
                   <a href="https://linkedin.com" rel="nofollow noreferrer" target="_blank"><FaLinkedin /></a>
               </li>
             </ul>
@@ -38,7 +37,7 @@ const Footer = () => (
           </div>
         </div>
         <p className={footerStyles.copyright}>
-          Created by Salem © All Rights Reserved {/*,<br /> but Rights are a False Concept, Unless You Defend Them <span style={{color: 'black', fill: 'black', fontSize: '1.5rem', textShadow: '1px 1px 1px lightgrey'}}> &#9398; </span><span style={{color: 'red', fill: 'red', fontSize: '1.5rem', textShadow: '1px 1px 1px gray'}}>	&#9773; </span>*/}
+          Via Del Web © All Rights Reserved {/*,<br /> but Rights are a False Concept, Unless You Defend Them <span style={{color: 'black', fill: 'black', fontSize: '1.5rem', textShadow: '1px 1px 1px lightgrey'}}> &#9398; </span><span style={{color: 'red', fill: 'red', fontSize: '1.5rem', textShadow: '1px 1px 1px gray'}}>	&#9773; </span>*/}
           </p>
 
       </footer>

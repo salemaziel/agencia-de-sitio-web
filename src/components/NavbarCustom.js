@@ -7,11 +7,14 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+
 import SideNav from "react-simple-sidenav";
+import FaqNav from "./FaqNav";
 
 import navStyles from "./navbar.module.css";
 
-import {LogoSquare} from '../images/index'
+import { LogoSquare } from "../images/index";
 
 import { FaHome } from "react-icons/fa";
 
@@ -37,20 +40,17 @@ const NavbarCustom = (props) => {
         className={navStyles.headerNavbar}
       >
         <Container>
-
-          <Navbar.Brand >
+          <Navbar.Brand>
             <Link to="/esp/home" rel="preload">
-          <img
-          className={scroll ? "d-inline-block align-top" : "hide"}
+              <img
+                className={scroll ? "d-inline-block align-top" : "hide"}
                 src={LogoSquare}
                 alt="Logo"
                 height="50"
               ></img>
-              </Link>
-            <Dropdown
-            className={scroll ? "hide" : "show"}
-            >
-            <Dropdown.Toggle variant="" id="dropdown-basic">
+            </Link>
+            <Dropdown className={scroll ? "hide" : "show"}>
+              <Dropdown.Toggle variant="" id="dropdown-basic">
                 <img
                   className="d-inline-block align-top"
                   src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601552057/rbl-art-designs/mexico-flag-transparent-100x_zmifmm.png"
@@ -60,14 +60,19 @@ const NavbarCustom = (props) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/en/home" className={navStyles.pickLang}>
+                <Dropdown.Item
+                  as={Link}
+                  to="/en/home"
+                  className={navStyles.pickLang}
+                >
                   {" "}
                   <img
                     className="d-inline-block align-top"
                     src="https://res.cloudinary.com/dexdumfqy/image/upload/v1601579192/rbl-art-designs/united-states-of-america-flag-3d-round-icon-256_gbffry.png"
                     alt="Logo"
                     height="40"
-                  ></img> English
+                  ></img>{" "}
+                  English
                 </Dropdown.Item>
                 {/*<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>*/}
@@ -112,24 +117,19 @@ const NavbarCustom = (props) => {
                 <NavDropdown.Item eventKey="/disenoweb">
                   {" "}
                   Diseño Web{" "}
-                </NavDropdown.Item>                
-
+                </NavDropdown.Item>
 
                 <NavDropdown.Item eventKey="/listadosdedirectorio">
-                Listados De Directorio
+                  Listados De Directorio
                 </NavDropdown.Item>
                 <NavDropdown.Item eventKey="/marketingdecontenidos">
-                Marketing De Contenidos
+                  Marketing De Contenidos
                 </NavDropdown.Item>
                 <NavDropdown.Item eventKey="/marketingderedessociales">
-                Marketing De Redes Sociales
+                  Marketing De Redes Sociales
                 </NavDropdown.Item>
 
-                <NavDropdown.Item eventKey="/SEO">
-                  {" "}
-                  S.E.O.{" "}
-                </NavDropdown.Item>
-
+                <NavDropdown.Item eventKey="/SEO"> S.E.O. </NavDropdown.Item>
               </NavDropdown>
 
               {/*<Nav.Item to="/faq" className={navStyles.navItem}>
@@ -197,18 +197,54 @@ const NavbarCustom = (props) => {
               margin: "auto",
             }}
             items={[
-              <Link rel="preload" className={navStyles.navItem} to="/">
+              <Link rel="preload" className={navStyles.navItem} to="/esp/home">
                 <FaHome />
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/about">
+              <Link rel="preload" className={navStyles.navItem} to="/esp/quienes-somos">
                 Quien Somos
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/contacto">
-                Contacto
+              <FaqNav
+                items={[
+                  {
+                    question: "Servicios",
+                    answer: "",
+                    listItem1: "",
+                    listItem2: "",
+                    linkTitle1: "Content Marketing",
+                    link1: "/en/services/contentmarketing",
+                    linkTitle2: "Directory Listings",
+                    link2: "/en/services/directorylistings",
+                    linkTitle3: "Social Media Marketing",
+                    link3: "/en/services/socialmediamarketing",
+                    linkTitle4: "Webservice Automation",
+                    link4: "/en/services/webserviceautomation",
+                    linkTitle5: "Website Design",
+                    link5: "/en/services/websitedesign",
+                  },
+                ]}
+              />,
+              <Link rel="preload" className={navStyles.navItem} to="/esp/home#">
+                Quien Ayudamos
               </Link>,
-              <Link rel="preload" className={navStyles.navItem} to="/servicios">
-                Servicios
-              </Link>,
+              <a
+                rel="nofollow noreferrer"
+                target="_blank"
+                href="https://app.viadelweb.com"
+                className={navStyles.navItem}
+              >
+                Client Login
+              </a>,              
+               <Nav.Item to="/esp/contacto" className={navStyles.navItem}>
+               <Button
+                 secondary
+                 as={Link}
+                 to="/esp/contacto"
+                 className={navStyles.CTAButton}
+                 active={false}
+               >
+                 Contacto
+               </Button>
+             </Nav.Item>,             
             ]}
             itemStyle={{
               background: "transparent!important",

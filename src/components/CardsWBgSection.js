@@ -29,7 +29,7 @@ function CardsWBgSection(props) {
               name: "Salem Aziel",
               role: "Web & App Development, Digital Consultant, Project Management",
               bio:
-                "",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             },
             {
               headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836482/rbl-art-designs/camera-2598507_1920_bbrgjn.jpg",
@@ -37,7 +37,7 @@ function CardsWBgSection(props) {
               name: "DaeHyun Yoo",
               role: "Graphic Design, Photography, Videography",
               bio:
-                "",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             },
             {
               headerImage: "https://res.cloudinary.com/dexdumfqy/image/upload/v1600836618/rbl-art-designs/digital-marketing-1433427_1920_ikotj9.jpg",
@@ -45,7 +45,7 @@ function CardsWBgSection(props) {
               name: "Uriel Aguilar",
               role: "Digital Consultant, Project Management",
               bio:
-                "",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             },
           ]}
         />

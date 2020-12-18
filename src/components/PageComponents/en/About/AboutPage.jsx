@@ -26,7 +26,7 @@ const AboutPageEN = (props) => {
       <Container>
         <Row className="justify-content-center mt-3 mb-5">
         <Col xs={10} lg={4}>
-            <Button as={Link} to="/en/contact" className="d-block py-2 px-4">Schedule A Call</Button>
+            <Button as={Link} to="/en/contact" className="py-3 px-4 btn-block btn-lg">Schedule A Call</Button>
           </Col>
         </Row>
       </Container>
