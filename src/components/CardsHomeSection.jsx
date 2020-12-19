@@ -39,7 +39,7 @@ function CardsHomeSection(props) {
               stepNumber: "Step 2",
               stepTitle: "Get Your Plan",
               stepDescription:
-                "Browse through everything we have to offer and choose the option that's right for you!",
+                "Browse through all the digital services we have to offer and choose the option that's right for you!",
                 link: "/en/contact",
                 linkText: "Get Your Plan",
 
