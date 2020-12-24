@@ -12,12 +12,24 @@ module.exports = {
     ...config,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-react-helmet`,
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+    },
+    {
+      resolve: `gatsby-transformer-sharp`,
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    },
     {
       resolve: "gatsby-plugin-local-search",
       options: {
@@ -60,8 +72,12 @@ module.exports = {
           })),
       },
     },
-    `gatsby-plugin-feed-mdx`,
-    `gatsby-plugin-root-import`,
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
+    },
+    {
+      resolve:`gatsby-plugin-root-import`,
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -104,13 +120,6 @@ module.exports = {
           },
         ],
         plugins: [`gatsby-remark-images`],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -164,15 +173,19 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    `gatsby-plugin-react-helmet-async`,
-    `gatsby-plugin-next-seo`,
     {
-      resolve: `gatsby-plugin-tawk.to`,
-      options: {
-        tawkId: "5fe2b633a8a254155ab5ab88",
-        // get this from the tawk script widget
-      },
+      resolve: `gatsby-plugin-react-helmet-async`,
     },
+    {
+      resolve: `gatsby-plugin-next-seo`,
+    },
+//    {
+//      resolve: `gatsby-plugin-tawk.to`,
+//      options: {
+//        tawkId: "5fe2b633a8a254155ab5ab88",
+        // get this from the tawk script widget
+//      },
+//    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -183,6 +196,12 @@ module.exports = {
         theme_color: `#2579bc`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     //    {
@@ -200,6 +219,8 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
   ],
 };

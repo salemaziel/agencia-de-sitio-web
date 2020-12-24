@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import OldBio from "../components/old-bio"
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import Layout2 from "../components/old-layout"
 import OldSEO from "../components/old-seo"
 import Button from "../components/old-button"
 import SearchPosts from "../components/searchPosts"
@@ -20,7 +20,7 @@ class Blog extends React.Component {
     const localSearchBlog = data.localSearchBlog
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout2 location={this.props.location} title={siteTitle}>
         <OldSEO title="Blog by Salem: All Posts" />
           <section className="three">
             <Container>
@@ -41,7 +41,7 @@ class Blog extends React.Component {
               </Link>
             </Container>
           </section>
-      </Layout>
+      </Layout2>
     )
   }
 }
