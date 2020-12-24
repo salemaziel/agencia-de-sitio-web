@@ -7,6 +7,7 @@ import Layout2 from "../components/old-layout"
 import OldSEO from "../components/old-seo"
 import { rhythm, scale } from "../utils/typography"
 
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
