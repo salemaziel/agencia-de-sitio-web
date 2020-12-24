@@ -75,6 +75,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-next-seo`,
     {
+      resolve: `gatsby-plugin-tawk.to`,
+      options: {
+        tawkId: "5fe2b633a8a254155ab5ab88",
+        // get this from the tawk script widget
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Via Del Web Digital Marketing`,
