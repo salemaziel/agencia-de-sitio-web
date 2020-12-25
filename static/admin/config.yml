@@ -1,7 +1,7 @@
 backend:
-  name: github
-  repo: salemaziel/agencia-de-sitio-web
-  branch: main
+  name: git-gateway
+  branch: master
+
 
 media_folder: content/assets
 public_folder: ../assets

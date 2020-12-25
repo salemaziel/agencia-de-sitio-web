@@ -31,6 +31,9 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
     },
     {
+      resolve: 'gatsby-plugin-netlify-identity-widget',
+    },
+    {
       resolve: "gatsby-plugin-local-search",
       options: {
         name: "blog",
