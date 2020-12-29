@@ -4,7 +4,7 @@ import SectionHero from "./section1Hero";
 import SectionTiles from "./section2Tiles";
 import SectionThree from "./sectionThree";
 import FeaturesSectionZigzag from "../../../FeaturesSectionZigzag";
-import FeaturesSectionPic3List from "../../../FeaturesSectionPic3List.js";
+import FeaturesSectionPic3List from "../../../FeaturesSectionPic3List";
 import CtaSectionBgImage from "../../../CtaSectionBgImage";
 
 import PricingCardsSection from "../../../PricingCardsSection";
@@ -15,6 +15,8 @@ import { Helmet } from "react-helmet";
 import Fade from "react-reveal/Fade";
 import { navigateTo } from "gatsby";
 import SectionWavesEN from "../../../SectionWavesEN";
+
+import ClientsSection from '../../../ClientsSection'
 
 const HomepageEN = (props) => {
   return (
@@ -29,7 +31,7 @@ const HomepageEN = (props) => {
         subtitle="¿Cómo podemos ayudar te hoy?"
       />*/}
       <SectionTiles
-        title1="Automation, Apps, and WebApps are Here."
+        title1="Website Design ● Web Development ● Digital Marketing"
         title2="Is Your Business Using Them To Your Advantage?"
         subdescription="Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod
       sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus
@@ -57,6 +59,16 @@ const HomepageEN = (props) => {
         title="Funcionalidades"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
       />
+      <ClientsSection
+        bg="white"
+        textColor="dark"
+        size="md"
+        bgImage=""
+        bgImageOpacity={1}
+        title="You're in good company"
+        subtitle=""
+      />
+
       <Fade top>
         <HeroSectionTxtBtnRight
           bg="white"
@@ -83,6 +95,7 @@ const HomepageEN = (props) => {
         }}*/
         />
       </Fade>
+
       <FeaturesSectionPic3List
         bg="white"
         textColor="dark"

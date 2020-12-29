@@ -6,6 +6,7 @@
   "author": "salemaziel <contact@salemaziel.com>",
   "dependencies": {
     "@mdx-js/mdx": "1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "1.12.0",
     "bootstrap": "4.5.3",
     "cross-fetch": "^3.0.6",
@@ -15,6 +16,7 @@
     "gatsby-plugin-google-analytics": "^2.8.0",
     "gatsby-plugin-hotjar": "^1.1.1",
     "gatsby-plugin-manifest": "2.9.0",
+    "gatsby-plugin-mdx": "^1.7.1",
     "gatsby-plugin-next-seo": "^1.6.1",
     "gatsby-plugin-offline": "3.7.0",
     "gatsby-plugin-purgecss": "^5.0.0",
@@ -26,6 +28,8 @@
     "gatsby-plugin-sitemap": "2.9.0",
     "gatsby-plugin-styled-components": "3.7.0",
     "gatsby-plugin-tawk.to": "^1.0.5",
+    "gatsby-remark-copy-linked-files": "^2.7.0",
+    "gatsby-remark-smartypants": "^2.7.0",
     "gatsby-source-filesystem": "2.8.0",
     "gatsby-transformer-sharp": "2.9.0",
     "node-sass": "^4.14.1",
@@ -43,6 +47,7 @@
     "react-reveal": "^1.2.2",
     "react-simple-sidenav": "^2.0.0",
     "react-typist": "^2.0.5",
+    "react-use-flexsearch": "^0.1.1",
     "styled-components": "5.2.1"
   },
   "devDependencies": {

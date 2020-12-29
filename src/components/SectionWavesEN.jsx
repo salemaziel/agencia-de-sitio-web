@@ -21,11 +21,12 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
           {/*<h1>Simple CSS Waves</h1>*/}
           <div className="d-block">
           <Typist startDelay={200} cursor={{ show: false }}>
-            <h1 /*style={{ color: "white", textShadow: "2px 2px 4px black" }}*/>
+            <span className="headline" /*style={{ color: "white", textShadow: "2px 2px 4px black" }}*/>
               {props.headline}
-            </h1>
+            </span>
+            <br />
             <Typist.Delay ms={800} />
-            <h3
+            <span className="subtitle"
             /*style={{
               color: "white",
               letterSpacing: "normal",
@@ -33,7 +34,7 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
             }}*/
             >
               {props.subtitle}
-            </h3>
+            </span>
           </Typist>
           </div>
 
