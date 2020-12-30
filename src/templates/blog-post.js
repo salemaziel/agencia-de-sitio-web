@@ -1,11 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import Container from 'react-bootstrap/Container'
+import Section from '../components/Section'
+import SectionHeader from '../components/SectionHeader'
 
 import Bio from "../components/old-bio"
 import Layout2 from "../components/old-layout"
 import OldSEO from "../components/old-seo"
-import { rhythm, scale } from "../utils/typography"
 
 
 class BlogPostTemplate extends React.Component {
@@ -20,15 +22,26 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-                
-
-        <h1>{post.frontmatter.title}</h1>
+        <Section
+        bg="white"
+        textColor="dark"
+        size="lg"
+        bgImage=""
+        bgImageOpacity>
+          <Container>
+          <SectionHeader
+          title={post.frontmatter.title}
+          subtitle=""
+          size={2}
+          spaced={true}
+          className="text-center"
+        />
         <p
           style={{
-            ...scale(-1 / 5),
             display: `block`,
-            marginBottom: rhythm(1),
+            marginBottom: '2rem',
             marginTop: '0',
+            textAlign: 'left'
           }}
         >
           {post.frontmatter.date}
@@ -36,7 +49,7 @@ class BlogPostTemplate extends React.Component {
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: '2rem'
           }}
         />
         <Bio />
@@ -65,6 +78,8 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        </Container>
+        </Section>
       </Layout2>
     )
   }

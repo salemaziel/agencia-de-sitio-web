@@ -1,11 +1,11 @@
-const config = require("./config/site");
+const config = require("./config");
 
 module.exports = {
   siteMetadata: {
     title: `Via Del Web`,
     description: `Digital Marketing and Website Design`,
     author: `@salemaziel`,
-    siteUrl: `https://www.viadelweb.com`,
+    siteUrl: `https://viadelweb.com`,
     social: {
       twitter: `salemamb760`,
     },
@@ -13,13 +13,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-netlify-cms`,
+    },
+    {
       resolve: `gatsby-plugin-react-helmet`,
     },
     {
       resolve: `gatsby-plugin-sass`,
-    },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
     },
     {
       resolve: `gatsby-transformer-sharp`,
@@ -30,9 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
-    {
-      resolve: 'gatsby-plugin-netlify-identity-widget',
-    },
+//    {
+//      resolve: 'gatsby-plugin-netlify-identity-widget',
+//    },
     {
       resolve: "gatsby-plugin-local-search",
       options: {
@@ -162,12 +162,12 @@ module.exports = {
         cookieDomain: "viadelweb.com",
       },
     },
-    {
-      resolve: `gatsby-plugin-canonical-urls`,
-      options: {
-        siteUrl: `https://viadelweb.com`,
-      },
-    },
+//    {
+//      resolve: `gatsby-plugin-canonical-urls`,
+//      options: {
+//        siteUrl: `https://viadelweb.com`,
+//      },
+//    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -201,12 +201,12 @@ module.exports = {
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+//    {
+//      resolve: `gatsby-plugin-typography`,
+//      options: {
+//        pathToConfigModule: `src/utils/typography`,
+//      },
+//    },
     //    {
     //      resolve: `gatsby-plugin-purgecss`,
     //      options: {

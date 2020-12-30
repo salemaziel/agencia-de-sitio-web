@@ -1,9 +1,9 @@
 import React from "react";
 
-import LayoutEN from "../components/layoutEN";
-import OldSEO from "../components/old-seo";
+import LayoutEN from "../../components/layoutEN";
+import OldSEO from "../../components/old-seo";
 
-class NotFoundPage extends React.Component {
+class NotFoundPageEN extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -17,7 +17,7 @@ class NotFoundPage extends React.Component {
     }
   }
 
-export default NotFoundPage;
+export default NotFoundPageEN;
 
 export const pageQuery = graphql`
   query {

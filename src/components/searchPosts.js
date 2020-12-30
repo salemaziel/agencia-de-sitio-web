@@ -5,15 +5,13 @@ import { useFlexSearch } from "react-use-flexsearch"
 import * as queryString from "query-string"
 import Card from "react-bootstrap/Card"
 
-import { rhythm } from "../utils/typography"
 import { CardDeck, Col } from "react-bootstrap"
-import Img from "gatsby-image"
 
 const SearchBar = styled.div`
   display: flex;
   border: 1px solid #dfe1e5;
   border-radius: 10px;
-  margin: 0 auto ${rhythm(1)};
+  margin: 0 auto 2rem;
   width: 100%;
   height: 3rem;
   background: #fdfdfd;
@@ -58,7 +56,7 @@ const SearchedPosts = ({ results }) =>
           <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
             <h3
               style={{
-                marginBottom: rhythm(1 / 4),
+                marginBottom: '2rem',
                 color: "#888",
               }}
             >
@@ -112,8 +110,8 @@ const AllPosts = ({ posts }) => (
                 >
                   <h3
                     style={{
-                      marginBottom: rhythm(1 / 4),
-                      marginTop: rhythm(1 / 4),
+                      marginBottom: '3rem',
+                      marginTop: '2rem',
                       color: "#434343",
                     }}
                   >

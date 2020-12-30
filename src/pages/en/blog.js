@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import OldBio from "../components/old-bio"
-import LayoutEN from "../components/layoutEN"
-import OldSEO from "../components/old-seo"
-import Button from "../components/old-button"
-import SearchPosts from "../components/searchPosts"
+import OldBio from "../../components/old-bio"
+import LayoutEN from "../../components/layoutEN"
+import OldSEO from "../../components/old-seo"
+import Button from "../../components/old-button"
+import SearchPosts from "../../components/searchPosts"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -35,7 +35,7 @@ class Blog extends React.Component {
                 navigate={navigate}
                 location={location}
               />
-              <Link to="/">
+              <Link to="/en/home">
                 <Button marginTop="85px">Go Home</Button>
               </Link>
             </Container>

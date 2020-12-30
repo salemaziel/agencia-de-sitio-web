@@ -1,4 +1,5 @@
 module.exports = {
+  
     pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
     title: 'Via Del Web', // Navigation and Site Title
     titleAlt: 'Via Del Web', // Title for JSONLD
